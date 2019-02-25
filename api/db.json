@@ -3,6 +3,32 @@
   "events": [],
   "tasks": [],
   "articles": [],
-  "messages": [],
+  "messages": [
+    {
+      "message": "what up yo?",
+      "userId": null,
+      "id": 1
+    },
+    {
+      "message": "Nada, u",
+      "userId": null,
+      "id": 2
+    },
+    {
+      "message": "a;lkjf;lkjfd",
+      "userId": null,
+      "id": 3
+    },
+    {
+      "message": "asfl;kasfl",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "message": "aaaaaa",
+      "userId": null,
+      "id": 5
+    }
+  ],
   "friends": []
 }

@@ -19,6 +19,7 @@ observer.observe(someElement, config);
                 chatAPI.postComment(messageObjectBuilder())
                 .then(chatAPI.getComment)
                 .then((comments) => {
+                    document.querySelector("#chat-area").innerHTML = ""
                     comments.forEach(comment => {
                         document.querySelector("#chat-area").innerHTML += `<p>${comment.userId}:  ${comment.message}</p>`
                         scrollToBottom()
