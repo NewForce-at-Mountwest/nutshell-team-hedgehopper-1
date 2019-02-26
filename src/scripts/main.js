@@ -1,6 +1,6 @@
-import chatAPI from "./chatAPI"
-import chatDom from "./chatDom"
-import chatClickEvents from "./chatClickEvents";
+import chatAPI from "./chatFiles/chatAPI"
+import chatDom from "./chatFiles/chatDom"
+import chatClickEvents from "./chatFiles/chatClickEvents";
 
 chatAPI.getComment()
 .then((word) => {

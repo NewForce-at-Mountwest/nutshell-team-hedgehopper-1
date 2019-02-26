@@ -1,6 +1,6 @@
 // houses all chat functions associated with click events
-import chatAPI from "./chatAPI";
-import messageObjectBuilder from "./messageObjectBuilder";
+import chatAPI from "./chatFile/chatAPI";
+import messageObjectBuilder from "./chatFile/messageObjectBuilder";
 
 function scrollToBottom() {
     // Get a reference to the div you want to auto-scroll.
