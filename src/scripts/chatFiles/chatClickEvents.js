@@ -1,17 +1,11 @@
 // houses all chat functions associated with click events
-import chatAPI from "./chatFile/chatAPI";
-import messageObjectBuilder from "./chatFile/messageObjectBuilder";
+import chatAPI from "./chatAPI";
+import messageObjectBuilder from "./messageObjectBuilder";
+import editCommentForm from "./editCommentForm";
+import handleEdit from "./handleEdit";
+import scrollToBottom from "./scrollToBottom"
 
-function scrollToBottom() {
-    // Get a reference to the div you want to auto-scroll.
-const someElement = document.querySelector("#chat-area");
-// Create an observer and pass it a callback.
-const observer = new MutationObserver(scrollToBottom);
-// Tell it to look for new children that will change the height.
-const config = {childList: true};
-observer.observe(someElement, config);
-    someElement.scrollTop = someElement.scrollHeight;
-  }
+
 
   const chatClickEvents = {
     postNewComment: () => {
@@ -21,7 +15,7 @@ observer.observe(someElement, config);
                 .then((comments) => {
                     document.querySelector("#chat-area").innerHTML = ""
                     comments.forEach(comment => {
-                        document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit">${comment.userId}:  ${comment.message}</p>`
+                        document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit">${comment.user.name}:  ${comment.message}</p>`
                         scrollToBottom()
                     })
                     document.querySelector("#type-here").value = ""
@@ -30,11 +24,22 @@ observer.observe(someElement, config);
         })
     },
     editComment: () => {
-        document.querySelector("#chat-area").addEventListener("click", () => {
-           if(event.target.classList.contains("edit"))
+        document.querySelector("#chat-area").addEventListener("dblclick", () => {
+            const editId = event.target.id.split("-")[1]
 
-            console.log("you clicked me")
+            if(event.target.classList.contains("edit")) {
+                 console.log("you clicked me")
+                 chatAPI.getSingleComment(editId)
+                 .then(singleCommentData => {
+                    document.querySelector(`#edit-${editId}`).innerHTML = editCommentForm(singleCommentData)
+                    console.log(singleCommentData)
 
+                 })
+
+           }
+
+
+           handleEdit(editId)
 
 
         })
