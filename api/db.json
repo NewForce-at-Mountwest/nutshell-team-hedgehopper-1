@@ -2,32 +2,7 @@
   "users": [],
   "events": [],
   "tasks": [],
-  "articles": [
-    {
-      "artName": "Yes",
-      "artSynopsis": "No",
-      "artURL": "Maybe",
-      "userId": null,
-      "timestamp": 1551126864,
-      "id": 1
-    },
-    {
-      "artName": "No",
-      "artSynopsis": "Maybe",
-      "artURL": "Yes",
-      "userId": null,
-      "timestamp": 1551127533,
-      "id": 2
-    },
-    {
-      "artName": "Possibly",
-      "artSynopsis": "So",
-      "artURL": "Or Not",
-      "userId": null,
-      "timestamp": 1551127550,
-      "id": 3
-    }
-  ],
+  "newsArticles": [],
   "messages": [],
   "friends": []
 }
