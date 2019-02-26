@@ -22,7 +22,7 @@ const registerFormHTML = `<fieldset id="registerForm">
 <legend>Create New Account</legend>
 
 <div>
-  <label>Create User Name:</label> <input type="text" id="createUserName" >
+  <label>Create New Username:</label> <input type="text" id="createUserName" >
 </div>
 <div>
   <label>Create Password:</label> <input type="password" id="createPassword">
@@ -33,7 +33,7 @@ const registerFormHTML = `<fieldset id="registerForm">
 </fieldset>`
 
 const completeRegistrationButtonHTML = `<div class="button">
-<button id="completeRegistration">Create Account</button>
+<button id="completeRegistration">Confirm New Account</button>
 </div>`
 
 
@@ -49,7 +49,7 @@ const buildLogin = {
 
         registerForm: () =>{document.querySelector("#loginContainer").innerHTML += registerFormHTML},
 
-        completeRegistrationButton: () =>{document.querySelector("#loginContainer".innerHTML += completeRegistrationButtonHTML)},
+        completeRegistrationButton: () =>{document.querySelector("#loginContainer").innerHTML += completeRegistrationButtonHTML},
 
 
 

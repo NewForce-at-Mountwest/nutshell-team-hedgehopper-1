@@ -1,7 +1,7 @@
 const loginApiManager = {
     //fetch single user object for login authentication, returns single user object.
-    login: (name) => {
-        return fetch(`http://localhost:8088/users?name=${name}`)
+    checkLogin: (name) => {
+         return fetch(`http://localhost:8088/users?name=${name}`)
             .then(user => user.json())
     },
 
