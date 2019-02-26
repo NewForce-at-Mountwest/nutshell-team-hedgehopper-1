@@ -1,4 +1,8 @@
 node_modules
+<<<<<<< HEAD
  api/db.json
 
+=======
+api/db.json
+>>>>>>> master
 public/*.js
