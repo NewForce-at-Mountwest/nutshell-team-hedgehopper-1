@@ -1,4 +1,4 @@
-import loginPage from "./login"
+import loginPage from "./login-logout/login"
 
 loginPage();
 
