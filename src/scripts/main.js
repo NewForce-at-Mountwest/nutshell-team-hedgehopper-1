@@ -9,3 +9,4 @@ chatAPI.getComment()
 
 chatDom()
 chatClickEvents.postNewComment()
+chatClickEvents.editComment()

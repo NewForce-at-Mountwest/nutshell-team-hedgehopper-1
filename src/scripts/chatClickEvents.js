@@ -21,12 +21,22 @@ observer.observe(someElement, config);
                 .then((comments) => {
                     document.querySelector("#chat-area").innerHTML = ""
                     comments.forEach(comment => {
-                        document.querySelector("#chat-area").innerHTML += `<p>${comment.userId}:  ${comment.message}</p>`
+                        document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit">${comment.userId}:  ${comment.message}</p>`
                         scrollToBottom()
                     })
                     document.querySelector("#type-here").value = ""
 
                 })
+        })
+    },
+    editComment: () => {
+        document.querySelector("#chat-area").addEventListener("click", () => {
+           if(event.target.classList.contains("edit"))
+
+            console.log("you clicked me")
+
+
+
         })
     }
 }

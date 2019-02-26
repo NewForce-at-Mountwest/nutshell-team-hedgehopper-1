@@ -14,9 +14,17 @@ const chatAPI = {
             body: JSON.stringify(newMessage)
 
         });
-
+    },
+    editComment: (commentId, editedComment) => {
+        return fetch(`http://localhost:8088/messages/${commentId}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(editedComment)
+        });
+      }
     }
-}
 
 
 
