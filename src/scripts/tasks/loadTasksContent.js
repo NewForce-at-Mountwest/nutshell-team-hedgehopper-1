@@ -5,7 +5,7 @@ const afterLoad = (userId) => {
     printToDom.buildTaskList(userId);
     printToDom.button(userId);
     addClick.addNewTask(userId);
-    addClick.deleteClick(taskId);
+    // addClick.deleteClick(taskId);
 
 }
 

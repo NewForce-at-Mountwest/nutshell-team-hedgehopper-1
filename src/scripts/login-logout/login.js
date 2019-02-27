@@ -2,6 +2,7 @@ import buildLogin from "./buildLoginDOM"
 import clickEventLogin from "./clickEventLogin"
 
 
+
 const loginPage = ()=>{
 
 if (sessionStorage.length < 1){
@@ -16,6 +17,9 @@ if (sessionStorage.length < 1){
 if (sessionStorage.length >= 1){
     document.querySelector("#loginContainer").innerHTML = ""
     //rest of click events and building html go in here for Events, Chat, News, Friends, and Tasks
+
+
+
 }
 }
 
