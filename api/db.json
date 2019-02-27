@@ -24,319 +24,44 @@
   "articles": [],
   "messages": [
     {
-      "message": "thanks ",
+      "message": "hurry up ",
       "userId": "1",
       "id": 1
     },
     {
-      "message": "hey there",
+      "message": "hello nikki",
       "userId": "1",
       "id": 2
     },
     {
-      "message": "hey",
+      "message": "Russ you're fired ",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "apple",
       "userId": "1",
       "id": 4
     },
     {
-      "message": "hey",
+      "message": "orange",
       "userId": "1",
       "id": 5
     },
     {
-      "message": "bananana",
+      "message": "rockstars",
       "userId": "1",
       "id": 6
     },
     {
-      "message": "bananana",
-      "userId": "1",
+      "message": "yoooo sup man",
+      "userId": "3",
       "id": 7
     },
     {
-      "message": "greg",
-      "userId": "1",
+      "message": "hello world again",
+      "userId": "3",
       "id": 8
-    },
-    {
-      "message": "asf",
-      "userId": "1",
-      "id": 9
-    },
-    {
-      "message": "hi friend",
-      "userId": "1",
-      "id": 10
-    },
-    {
-      "message": "dead mouse",
-      "userId": "1",
-      "id": 11
-    },
-    {
-      "message": "dodod",
-      "userId": "1",
-      "id": 12
-    },
-    {
-      "message": "juice",
-      "userId": "1",
-      "id": 13
-    },
-    {
-      "message": "monkies",
-      "userId": "1",
-      "id": 14
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 15
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 16
-    },
-    {
-      "message": "log in successful",
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "message": "doggo",
-      "userId": "2",
-      "id": 18
-    },
-    {
-      "message": "catdaddy",
-      "userId": "2",
-      "id": 19
-    },
-    {
-      "message": "s",
-      "userId": "2",
-      "id": 20
-    },
-    {
-      "message": "cccc",
-      "userId": "2",
-      "id": 21
-    },
-    {
-      "message": "ssssss",
-      "userId": "2",
-      "id": 22
-    },
-    {
-      "message": "qqqqq",
-      "userId": "1",
-      "id": 23
-    },
-    {
-      "message": "eeee",
-      "userId": "1",
-      "id": 24
-    },
-    {
-      "message": "hhhh",
-      "userId": "1",
-      "id": 25
-    },
-    {
-      "message": "a;lkjf",
-      "userId": "1",
-      "id": 26
-    },
-    {
-      "message": "aasasas",
-      "userId": "1",
-      "id": 27
-    },
-    {
-      "message": "saaasasas",
-      "userId": "2",
-      "id": 28
-    },
-    {
-      "message": "ss",
-      "userId": "2",
-      "id": 29
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 30
-    },
-    {
-      "message": "asda",
-      "userId": "1",
-      "id": 31
-    },
-    {
-      "message": "ddddddd",
-      "userId": "1",
-      "id": 32
-    },
-    {
-      "message": "xxxxxx",
-      "userId": "2",
-      "id": 33
-    },
-    {
-      "message": "asdfaf",
-      "userId": "1",
-      "id": 34
-    },
-    {
-      "message": "qazqaz",
-      "userId": "1",
-      "id": 35
-    },
-    {
-      "message": "money",
-      "userId": "1",
-      "id": 36
-    },
-    {
-      "message": "money",
-      "userId": "1",
-      "id": 37
-    },
-    {
-      "message": "hey guys i'M rob ",
-      "userId": "3",
-      "id": 38
-    },
-    {
-      "message": "yo yo ",
-      "userId": "3",
-      "id": 39
-    },
-    {
-      "message": "whazzzzzzup",
-      "userId": "3",
-      "id": 40
-    },
-    {
-      "message": "rockwell",
-      "userId": "3",
-      "id": 41
-    },
-    {
-      "message": "hello kim",
-      "userId": "3",
-      "id": 42
-    },
-    {
-      "message": "aaaa",
-      "userId": "1",
-      "id": 43
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 44
-    },
-    {
-      "message": "sssss",
-      "userId": "2",
-      "id": 45
-    },
-    {
-      "message": "aaaaaa",
-      "userId": "1",
-      "id": 46
-    },
-    {
-      "message": "woooooooooooooohhhhhhhhhhhhhhh",
-      "userId": "3",
-      "id": 47
-    },
-    {
-      "message": "aaqaq",
-      "userId": "1",
-      "id": 48
-    },
-    {
-      "message": "aaaaa",
-      "userId": "1",
-      "id": 49
-    },
-    {
-      "message": "a",
-      "userId": "2",
-      "id": 50
-    },
-    {
-      "message": " ",
-      "userId": "1",
-      "id": 51
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 52
-    },
-    {
-      "message": "aaa",
-      "userId": "1",
-      "id": 53
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 54
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 55
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 56
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 57
-    },
-    {
-      "message": "a;lkdfjasd",
-      "userId": "1",
-      "id": 58
-    },
-    {
-      "message": "boo haha",
-      "userId": "1",
-      "id": 59
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 60
-    },
-    {
-      "message": "aaa",
-      "userId": "1",
-      "id": 61
-    },
-    {
-      "message": "make say thing",
-      "userId": "1",
-      "id": 62
-    },
-    {
-      "message": "yes it works ",
-      "userId": "1",
-      "id": 63
-    },
-    {
-      "message": "aawork",
-      "userId": "1",
-      "id": 64
     }
   ],
   "friends": []
