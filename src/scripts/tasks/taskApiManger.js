@@ -17,7 +17,57 @@ postTask: (taskObject) => {
     })
 },
 //edit tasks
+editTask: (taskId, taskObject) => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type" : "application/json"
+      },
+      body: JSON.stringify(taskObject)
+    })
+  },
 
+  //deletes task
+
+deleteTask: taskId => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+      method: "DELETE"
+    });
+  },
+
+  getSingleTask: taskId => fetch(`http://localhost:8088/tasks/${taskId}`)
+.then(singleTask => singleTask.json()),
+
+
+markAsComplete: taskId => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({completed: "true"})
+    });
+  },
+
+markAsIncomplete: taskId => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({completed: "false"})
+    });
+  }
+
+//   const editTask = (idParam, taskObject) => {
+//     return fetch(`http://localhost:8088/tasks/${idParam}`, {
+//       method: "PUT",
+//       headers: {
+//         "Content-Type" : "application/json"
+//       },
+//       body: JSON.stringify(taskObject)
+//     })
+//   }
 //delete tasks
 }
 

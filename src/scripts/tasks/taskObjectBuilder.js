@@ -1,12 +1,14 @@
+import apiManager from "./taskApiManger"
+
 //builds task object for logged in user
 
-const buildTaskObject = (taskName, taskDescription, taskDueDate) => {
+const buildTaskObject = (taskName, taskDescription, taskDueDate, isItComplete) => {
     return `{
-        userId: ${sessionStorage.getItem("currentUser")},
+        userId: ${sessionStorage.getItem("userId")},
         task: ${taskName},
         description: ${taskDescription},
         dueDate: ${taskDueDate},
-        complete: false
+        complete: ${isItComplete}
     }`
 }
 

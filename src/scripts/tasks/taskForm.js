@@ -1,23 +1,73 @@
+import apiManager from "./taskApiManger"
+import buildTaskObject from "./taskObjectBuilder"
+import addClick from "./taskClickEvents"
+
 //builds the task form
 
 const taskFormBuilder = {
     buildTaskForm: () => {
         return `
-        <div id = "taskForm-${buildTaskForm.id}">
+        <div id = "taskForm-${buildTaskObject.id}">
         <h3>Add new task</h3>
-        <input type="text" id="taskName" placeholder="task name">
-        <input type="text" id="taskDescription" placeholder="description">
-        <input type="date" id="taskDueDate">
+        <input type="text" id="taskName" placeholder="task name"></input>
+        <input type="text" id="taskDescription" placeholder="description"></input>
+        <input type="date" id="taskDueDate"></input>
         <label class="checkbox">
-        <input class="checkbox" id="checkbox-${buildTaskForm.id}" type="checkbox" ${buildTaskForm.completed === "true"? "checked" : ""}/>
-        <span>${buildTaskForm.name}</span>
+        <input class="checkbox" id="checkbox-${buildTaskObject.id}" type="checkbox" ${buildTaskObject.completed === "true"? "checked" : ""}/></input>
+        <span>${buildTaskObject.name}</span>
         </label>
-        <p>${buildTaskForm.description}</p>
-        <p>${buildTaskForm.dueDate}</p>
-        <button id="addTaskBtn">Add Task</button>
+        <p>${buildTaskObject.description}</p>
+        <p>${buildTaskObject.dueDate}</p>
+        <button id="${buildTaskObject.addTaskBtn}">Add Task</button>
         </div>
         `
     },
 
+    //builds edit form
 
+    buildEditForm: (singleTask) => {
+        return `
+        <div id= "editTaskForm-${buildTaskObject.id}">
+        <input type="text" value="${buildTaskObject.name}"id="taskNameEdit">
+        <input type="text" value="${buildTaskObject.description}"id="taskDescriptionEdit">
+        <input type="date" value="${buildTaskObject.dueDate}"id="taskDueDateEdit">
+        <label class="checkbox">
+        <input class="checkbox" id="checkbox-${buildTaskObject.id}" type="checkbox" ${buildTaskObject.completed === "true"? "checked" : ""}/>
+        <input type="hidden" id="completedEditInput-${singleTask.id}" value=${singleTask.completed}>
+        <button id="${addTaskBtn}">Save Task</button>
+        `
+    },
+
+    buildSingleTask: (singleTaskObject) => {
+        return `<div class="task" id="task-${singleTaskObject.id}">
+        <label class="checkbox">
+        <input class="checkbox" id="checkbox-${singleTaskObject.id}" type="checkbox" ${singleTaskObject.completed === "true"? "checked" : ""}/>
+          <span>${singleTaskObject.name}</span>
+        </label>
+          <p>${singleTaskObject.description}</p>
+          <p>${singleTaskObject.dueDate}</p>
+          <button id="delete-${singleTaskObject.id}">delete</button>
+          <button id="edit-${singleTaskObject.id}">edit</button>
+      </div>`
+    },
+    saveButton: (userId) => { //save button html
+        return `<button type="button" class="save" id="saveTaskBtn-${userId}">Save</button>`
+    },
+    saveEdit: (taskId) => {
+        return `<button type="button" class="edit" id="editTaskBtn-${taskId}">Save Changes</button>`
+    }
 }
+    // <button id="delete-${singleTaskObject.id}">delete
+    // <button id="edit-${singleTaskObject.id}">edit
+    // buildSingleTask: (taskName, taskDescription, taskDueDate, completed, id) => {
+    //     return `
+    //     <div id="singleTask-${id}">
+    //     <h3>${taskName}</h3>
+    //     <h4>${taskDescription}</h4>
+    //     <h4>${taskDueDate}</h4>
+    //     <h4>${completed}</h4>
+
+    //     </div>`
+    // }
+
+export default taskFormBuilder
