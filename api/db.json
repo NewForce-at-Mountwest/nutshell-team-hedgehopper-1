@@ -1,8 +1,31 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "User1",
+      "password": "1",
+      "email": "User1@user1.com",
+      "id": 1
+    }
+  ],
   "events": [],
   "tasks": [],
-  "newsArticles": [],
+  "newsArticles": [
+    {
+      "artName": "Hi",
+      "artSynopsis": "Dee",
+      "artURL": "Ho",
+      "userId": null,
+      "timestamp": 1551211859,
+      "id": 1
+    },
+    {
+      "artName": "La",
+      "artSynopsis": "Dee",
+      "artURL": "Dah",
+      "timestamp": 1551232313,
+      "id": 2
+    }
+  ],
   "messages": [],
   "friends": []
 }

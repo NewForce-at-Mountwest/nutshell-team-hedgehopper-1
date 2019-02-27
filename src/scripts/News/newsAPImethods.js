@@ -16,7 +16,7 @@ const newsAPIMethods = {
             .then((parsedArticles => {
                 parsedArticles.forEach(article => {
                     // console.log(article)
-                    let articleString = `<article id="article-${article.id}">
+                    let articleString = `<article id="article-${article.id}" class="newsArticle">
                     <h2>${article.artName}<h2>
                     <h4>${article.artSynopsis}</h4>
                     <h4>${article.artURL}</h4>
@@ -34,7 +34,9 @@ const newsAPIMethods = {
             })
     },
     getSingleNewsArticle: (articleId) => {
-            return fetch(`http://localhost:8088/newsArticles/${articleId}`
-            )}
+          return fetch(`http://localhost:8088/newsArticles/${articleId}`)
+                .then(singleArticle => singleArticle.json())
+                          // console.log(parsedArticle)
+           }
 }
 export default newsAPIMethods
