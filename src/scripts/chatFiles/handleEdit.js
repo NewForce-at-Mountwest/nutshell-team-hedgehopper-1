@@ -4,10 +4,11 @@ import scrollToBottom from "./scrollToBottom"
 
 //handles edit click event.
 
-const handleEdit = (comment) => {
+const handleEdit = () => {
+
     document.querySelector("#chatContainer").addEventListener("click", () => {
         if(event.target.classList.contains("save-edit-btn")){
-            console.log(comment)
+            const comment = event.target.id.split("-")[2]
             chatAPI.editComment(editObjectBuilder(comment))
             .then(chatAPI.getComment)
             .then((comments) => {

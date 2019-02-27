@@ -59,9 +59,94 @@
       "id": 7
     },
     {
-      "message": "hello world again",
-      "userId": "3",
+      "message": "hello world again and",
+      "userId": "1",
       "id": 8
+    },
+    {
+      "message": "oops didn't mean to say  ",
+      "userId": "1",
+      "id": 9
+    },
+    {
+      "message": "adflkafd",
+      "userId": "1",
+      "id": 10
+    },
+    {
+      "message": "awesome!!!!!",
+      "userId": "3",
+      "id": 11
+    },
+    {
+      "message": "goofball",
+      "userId": "3",
+      "id": 12
+    },
+    {
+      "message": "things a bit",
+      "userId": "3",
+      "id": 13
+    },
+    {
+      "message": "ljlkjhlkhlkhlkhjhlk",
+      "userId": "1",
+      "id": 14
+    },
+    {
+      "message": "a really good time ",
+      "userId": "1",
+      "id": 15
+    },
+    {
+      "message": "figure it out again and again and again ",
+      "userId": "1",
+      "id": 16
+    },
+    {
+      "message": "hello me",
+      "userId": "1",
+      "id": 17
+    },
+    {
+      "message": "boom",
+      "userId": "1",
+      "id": 18
+    },
+    {
+      "message": "success",
+      "userId": "1",
+      "id": 19
+    },
+    {
+      "message": "no mistakes",
+      "userId": "1",
+      "id": 20
+    },
+    {
+      "message": "refresh",
+      "userId": "3",
+      "id": 21
+    },
+    {
+      "message": "as",
+      "userId": "1",
+      "id": 22
+    },
+    {
+      "message": "aaasaasasa",
+      "userId": "1",
+      "id": 23
+    },
+    {
+      "message": "monday blues",
+      "userId": "1",
+      "id": 24
+    },
+    {
+      "message": "monkies are nice creatures. this I know for sure ",
+      "userId": "3",
+      "id": 25
     }
   ],
   "friends": []
