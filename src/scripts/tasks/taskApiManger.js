@@ -3,11 +3,13 @@
 const apiManager = {
     //fetches users tasks
     getTasks: (userId) => {
+
         return fetch(`http://localhost:8088/tasks?userId=${userId}`)
         .then(r => r.json())
     },
     //posts new tasks
 postTask: (taskObject) => {
+  debugger;
     return fetch("http://localhost:8088/tasks", {
         method: "POST",
         headers: {

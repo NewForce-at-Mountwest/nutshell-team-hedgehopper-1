@@ -7,18 +7,12 @@ import addClick from "./taskClickEvents"
 const taskFormBuilder = {
     buildTaskForm: () => {
         return `
-        <div id = "taskForm-${buildTaskObject.id}">
+        <div id = "taskForm">
         <h3>Add new task</h3>
         <input type="text" id="taskName" placeholder="task name"></input>
         <input type="text" id="taskDescription" placeholder="description"></input>
         <input type="date" id="taskDueDate"></input>
-        <label class="checkbox">
-        <input class="checkbox" id="checkbox-${buildTaskObject.id}" type="checkbox" ${buildTaskObject.completed === "true"? "checked" : ""}/></input>
-        <span>${buildTaskObject.name}</span>
-        </label>
-        <p>${buildTaskObject.description}</p>
-        <p>${buildTaskObject.dueDate}</p>
-        <button id="${buildTaskObject.addTaskBtn}">Add Task</button>
+        <button id="saveTask">Add Task</button>
         </div>
         `
     },
@@ -42,11 +36,11 @@ const taskFormBuilder = {
         return `<div class="task" id="task-${singleTaskObject.id}">
         <label class="checkbox">
         <input class="checkbox" id="checkbox-${singleTaskObject.id}" type="checkbox" ${singleTaskObject.completed === "true"? "checked" : ""}/>
-          <span>${singleTaskObject.name}</span>
         </label>
+        <p>${singleTaskObject.task}</p>
           <p>${singleTaskObject.description}</p>
           <p>${singleTaskObject.dueDate}</p>
-          <button id="delete-${singleTaskObject.id}">delete</button>
+          <button id="delete-${singleTaskObject.id}" class="delete">delete</button>
           <button id="edit-${singleTaskObject.id}">edit</button>
       </div>`
     },
@@ -69,5 +63,8 @@ const taskFormBuilder = {
 
     //     </div>`
     // }
+
+    // <label class="checkbox">
+    // <input class="checkbox" id="checkbox-${buildTaskObject.id}" type="checkbox" ${buildTaskObject.completed === "true"? "checked" : ""}/></input>
 
 export default taskFormBuilder
