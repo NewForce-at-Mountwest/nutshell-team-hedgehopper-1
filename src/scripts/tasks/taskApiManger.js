@@ -4,13 +4,13 @@ const apiManager = {
     //fetches users tasks
     getTasks: (userId) => {
 
-        return fetch(`http://localhost:8088/tasks?userId=${userId}`)
+        return fetch(`http://localhost:8089/tasks?userId=${userId}`)
         .then(r => r.json())
     },
     //posts new tasks
 postTask: (taskObject) => {
-  debugger;
-    return fetch("http://localhost:8088/tasks", {
+
+    return fetch("http://localhost:8089/tasks", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -20,7 +20,7 @@ postTask: (taskObject) => {
 },
 //edit tasks
 editTask: (taskId, taskObject) => {
-    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+    return fetch(`http://localhost:8089/tasks/${taskId}`, {
       method: "PUT",
       headers: {
         "Content-Type" : "application/json"
@@ -32,17 +32,17 @@ editTask: (taskId, taskObject) => {
   //deletes task
 
 deleteTask: taskId => {
-    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+    return fetch(`http://localhost:8089/tasks/${taskId}`, {
       method: "DELETE"
     });
   },
 
-  getSingleTask: taskId => fetch(`http://localhost:8088/tasks/${taskId}`)
+  getSingleTask: taskId => fetch(`http://localhost:8089/tasks/${taskId}`)
 .then(singleTask => singleTask.json()),
 
 
 markAsComplete: taskId => {
-    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+    return fetch(`http://localhost:8089/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -52,7 +52,7 @@ markAsComplete: taskId => {
   },
 
 markAsIncomplete: taskId => {
-    return fetch(`http://localhost:8088/tasks/${taskId}`, {
+    return fetch(`http://localhost:8089/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -61,15 +61,15 @@ markAsIncomplete: taskId => {
     });
   }
 
-//   const editTask = (idParam, taskObject) => {
-//     return fetch(`http://localhost:8088/tasks/${idParam}`, {
-//       method: "PUT",
-//       headers: {
-//         "Content-Type" : "application/json"
-//       },
-//       body: JSON.stringify(taskObject)
-//     })
-//   }
+  // editTask: (idParam, taskObject) => {
+  //   return fetch(`http://localhost:8088/tasks/${idParam}`, {
+  //     method: "PUT",
+  //     headers: {
+  //       "Content-Type" : "application/json"
+  //     },
+  //     body: JSON.stringify(taskObject)
+  //   })
+  // }
 //delete tasks
 }
 

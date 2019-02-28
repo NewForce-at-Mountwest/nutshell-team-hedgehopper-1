@@ -1,13 +1,13 @@
 const loginApiManager = {
     //fetch single user object for login authentication, returns single user object.
     checkLogin: (name) => {
-         return fetch(`http://localhost:8088/users?name=${name}`)
+         return fetch(`http://localhost:8089/users?name=${name}`)
             .then(user => user.json())
     },
 
     //takes a new user and will post it to the user table in db.json
     postNewUser : (newUser) =>{
-            fetch("http://localhost:8088/users", {
+            fetch("http://localhost:8089/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -19,7 +19,7 @@ const loginApiManager = {
     },
     //returns a  the users in db.json
     allUsers: () => {
-        return fetch("http://localhost:8088/users")
+        return fetch("http://localhost:8089/users")
             .then(allUsers => allUsers.json())
         },
 

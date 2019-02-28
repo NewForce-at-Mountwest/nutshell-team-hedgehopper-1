@@ -19,37 +19,34 @@ const taskFormBuilder = {
 
     //builds edit form
 
-    buildEditForm: (singleTask) => {
+    buildEditForm: (editTask) => {
         return `
-        <div id= "editTaskForm-${buildTaskObject.id}">
-        <input type="text" value="${buildTaskObject.name}"id="taskNameEdit">
-        <input type="text" value="${buildTaskObject.description}"id="taskDescriptionEdit">
-        <input type="date" value="${buildTaskObject.dueDate}"id="taskDueDateEdit">
-        <label class="checkbox">
-        <input class="checkbox" id="checkbox-${buildTaskObject.id}" type="checkbox" ${buildTaskObject.completed === "true"? "checked" : ""}/>
-        <input type="hidden" id="completedEditInput-${singleTask.id}" value=${singleTask.completed}>
-        <button id="${addTaskBtn}">Save Task</button>
+        <div class="editForm" id=editTask-${editTask.id}>
+        <input type="text" class="edit" value=${editTask.task} id="taskNameEdit-${editTask.task}">
+        <input type="text" class="edit" value=${editTask.description} id="taskDescriptionEdit-${editTask.description}">
+        <button class="saveEdit" id="save-${editTask.id}">Save Task</button>
         `
     },
+    // <input type="date" class="edit" value= ${editTask.dueDate} id="taskDueDateEdit-${editTask.dueDate}">
 
     buildSingleTask: (singleTaskObject) => {
         return `<div class="task" id="task-${singleTaskObject.id}">
         <label class="checkbox">
-        <input class="checkbox" id="checkbox-${singleTaskObject.id}" type="checkbox" ${singleTaskObject.completed === "true"? "checked" : ""}/>
+        <input class="checkbox" id="checkbox-${singleTaskObject.id}" type="checkbox" ${singleTaskObject.complete === "true"? "checked" : ""}/>
         </label>
         <p>${singleTaskObject.task}</p>
           <p>${singleTaskObject.description}</p>
           <p>${singleTaskObject.dueDate}</p>
           <button id="delete-${singleTaskObject.id}" class="delete">delete</button>
-          <button id="edit-${singleTaskObject.id}">edit</button>
+          <button id="edit-${singleTaskObject.id}" class="edit">edit</button>
       </div>`
     },
-    saveButton: (userId) => { //save button html
-        return `<button type="button" class="save" id="saveTaskBtn-${userId}">Save</button>`
-    },
-    saveEdit: (taskId) => {
-        return `<button type="button" class="edit" id="editTaskBtn-${taskId}">Save Changes</button>`
-    }
+    // saveButton: (userId) => { //save button html
+    //     return `<button type="button" class="saveEdit" id="saveTaskBtn-${userId}">Save</button>`
+    // },
+    // saveEdit: (taskId) => {
+    //     return `<button type="button" class="saveEdit" id="editTaskSaveBtn-${taskId}">Save Changes</button>`
+    // }
 }
     // <button id="delete-${singleTaskObject.id}">delete
     // <button id="edit-${singleTaskObject.id}">edit

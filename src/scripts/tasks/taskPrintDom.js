@@ -11,7 +11,8 @@ const printToDom = {
             tasks.forEach(singleTask => {
                 if(singleTask.complete === false){
                     document.querySelector("#taskDomContainer").innerHTML += taskFormBuilder.buildSingleTask(singleTask)
-                }else{
+                }
+                else{
                     document.getElementById("taskDomContainer").innerHTML = "<h4>All tasks completed</h4>"
                 }
                 })
