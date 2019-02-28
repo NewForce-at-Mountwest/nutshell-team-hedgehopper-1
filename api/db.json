@@ -22,6 +22,52 @@
   "events": [],
   "tasks": [],
   "articles": [],
-  "messages": [],
+  "messages": [
+    {
+      "message": "a",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "message": "asas",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "message": "a",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "asasasaaa",
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "message": "yoo",
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "message": "bananas",
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "message": "monkey rat",
+      "userId": "1",
+      "id": 7
+    },
+    {
+      "message": "zombie",
+      "userId": "3",
+      "id": 8
+    },
+    {
+      "message": "not sure what i'm saying",
+      "userId": "1",
+      "id": 9
+    }
+  ],
   "friends": []
 }
