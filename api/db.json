@@ -24,129 +24,49 @@
   "articles": [],
   "messages": [
     {
-      "message": "hurry up ",
-      "userId": "1",
+      "message": "Welcome to the 72nd annual Golden Globes awards",
+      "userId": "3",
       "id": 1
     },
     {
-      "message": "hello nikki",
-      "userId": "1",
+      "message": "here we go again",
+      "userId": "3",
       "id": 2
     },
     {
-      "message": "Russ you're fired ",
-      "userId": "1",
+      "message": "yup and then again",
+      "userId": "3",
       "id": 3
     },
     {
-      "message": "apple",
-      "userId": "1",
+      "message": "hey buddy",
+      "userId": "3",
       "id": 4
     },
     {
-      "message": "orange",
+      "message": "what are you up to ",
       "userId": "1",
       "id": 5
     },
     {
-      "message": "rockstars",
-      "userId": "1",
+      "message": "nothing much just chillin ",
+      "userId": "3",
       "id": 6
     },
     {
-      "message": "yoooo sup man",
-      "userId": "3",
+      "message": "thats cool",
+      "userId": "1",
       "id": 7
     },
     {
-      "message": "hello world again and",
+      "message": "",
       "userId": "1",
       "id": 8
     },
     {
-      "message": "oops didn't mean to say  ",
-      "userId": "1",
+      "message": "",
+      "userId": "3",
       "id": 9
-    },
-    {
-      "message": "adflkafd",
-      "userId": "1",
-      "id": 10
-    },
-    {
-      "message": "awesome!!!!!",
-      "userId": "3",
-      "id": 11
-    },
-    {
-      "message": "goofball",
-      "userId": "3",
-      "id": 12
-    },
-    {
-      "message": "things a bit",
-      "userId": "3",
-      "id": 13
-    },
-    {
-      "message": "ljlkjhlkhlkhlkhjhlk",
-      "userId": "1",
-      "id": 14
-    },
-    {
-      "message": "a really good time ",
-      "userId": "1",
-      "id": 15
-    },
-    {
-      "message": "figure it out again and again and again ",
-      "userId": "1",
-      "id": 16
-    },
-    {
-      "message": "hello me",
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "message": "boom",
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "message": "success",
-      "userId": "1",
-      "id": 19
-    },
-    {
-      "message": "no mistakes",
-      "userId": "1",
-      "id": 20
-    },
-    {
-      "message": "refresh",
-      "userId": "3",
-      "id": 21
-    },
-    {
-      "message": "as",
-      "userId": "1",
-      "id": 22
-    },
-    {
-      "message": "aaasaasasa",
-      "userId": "1",
-      "id": 23
-    },
-    {
-      "message": "monday blues",
-      "userId": "1",
-      "id": 24
-    },
-    {
-      "message": "monkies are nice creatures. this I know for sure ",
-      "userId": "3",
-      "id": 25
     }
   ],
   "friends": []

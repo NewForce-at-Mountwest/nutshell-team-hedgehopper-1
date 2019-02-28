@@ -105,6 +105,7 @@ const clickEventLogin = {
             console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
+            document.querySelector("#chatContainer"). innerHTML = ""
             loginPage();
 
         })
