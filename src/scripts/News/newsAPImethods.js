@@ -7,7 +7,7 @@ const newsAPIMethods = {
             },
             body: JSON.stringify(articleObject)
         })
-            .then(postedArticle => postedArticle.json())
+            // .then(postedArticle => postedArticle.json())
     },
     printAllUserArticles: () => {
         const userId = sessionStorage.getItem("userId")
@@ -44,14 +44,12 @@ const newsAPIMethods = {
     getSingleNewsArticle: (articleId) => {
           return fetch(`http://localhost:8088/newsArticles/${articleId}`)
                 .then(singleArticle => singleArticle.json())
-                          // console.log(parsedArticle)
     },
 
 
 
 
     putEditedArticle: (articleId, editedArticleObject) => {
-        // console.log(articleId, editedArticleObject)
         return fetch(`http://localhost:8088/newsArticles/${articleId}`, {
                 method: "PUT",
                 headers: {

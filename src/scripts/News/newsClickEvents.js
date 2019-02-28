@@ -4,8 +4,8 @@ import buildEditForm from "./buildNewsEditForm.js"
 
 const newsClickEvents = {
     addNewsArticle: () => {
-        document.querySelector("#newsContainer").addEventListener("click", () => {
-            if (event.target.id === "saveNewsArticle") {
+        document.querySelector("#saveNewsArticle").addEventListener("click", () => {
+            // if (event.target.id === "saveNewsArticle") {
                 const newArticleObject = buildArticleObject.buildNewArticleObject()
                 newsAPIMethods.postNewArticle(newArticleObject).then(() => {
                 // .then((parsedArticle) => {
@@ -15,8 +15,8 @@ const newsClickEvents = {
                 document.querySelector("#articleSynopsis").value = ""
                 document.querySelector("#articleURL").value = ""
                 newsAPIMethods.printAllUserArticles()
-            })
-        }})
+                })
+        })
     },
     deleteNewsArticle: () => {
         document.querySelector("#newsContainer").addEventListener("click", () => {
