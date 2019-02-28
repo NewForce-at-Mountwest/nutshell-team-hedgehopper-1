@@ -36,6 +36,10 @@ const completeRegistrationButtonHTML = `<div class="button">
 <button id="completeRegistration">Confirm New Account</button>
 </div>`
 
+const logoutButton = `<div class="button">
+<button id="logout">Logout</button>
+</div>`
+
 
 
 
@@ -50,6 +54,8 @@ const buildLogin = {
         registerForm: () =>{document.querySelector("#loginContainer").innerHTML += registerFormHTML},
 
         completeRegistrationButton: () =>{document.querySelector("#loginContainer").innerHTML += completeRegistrationButtonHTML},
+
+        logout: () =>{document.querySelector("#loginContainer").innerHTML = logoutButton}
 
 
 
