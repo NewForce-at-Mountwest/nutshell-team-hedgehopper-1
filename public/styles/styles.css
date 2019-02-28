@@ -1,0 +1,12 @@
+#eventDOMarea{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+fieldset:nth-last-child(1){
+    background-color: aquamarine;
+    color: black;
+    font-size: 1.5em;
+    font-style: bold;
+
+}

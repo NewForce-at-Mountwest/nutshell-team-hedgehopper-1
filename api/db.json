@@ -1,9 +1,13 @@
 {
-    "users": [],
-    "events": [],
-    "tasks": [],
-    "articles": [],
-    "messages": [],
-    "friends": []
-
+  "users": [
+    {
+      "name": "russ",
+      "id": 3
+    }
+  ],
+  "events": [],
+  "tasks": [],
+  "articles": [],
+  "messages": [],
+  "friends": []
 }
