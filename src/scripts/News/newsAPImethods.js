@@ -14,14 +14,12 @@ const newsAPIMethods = {
         fetch(`http://localhost:8088/newsArticles/?userId=${userId}`)
             .then(userArticles => userArticles.json())
             .then((parsedArticles => {
-                console.log(parsedArticles)
+                // console.log(parsedArticles)
 
                 const sortedArray = parsedArticles.sort(function(a, b) {
                 return b.timestamp-a.timestamp
                 })
-                console.log(sortedArray)
-
-
+                // console.log(sortedArray)
 
                     sortedArray.forEach(article => {
                         // console.log(article)

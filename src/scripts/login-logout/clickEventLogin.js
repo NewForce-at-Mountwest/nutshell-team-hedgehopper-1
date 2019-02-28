@@ -1,6 +1,10 @@
 import loginApiManager from "./loginApiManager"
 import buildLogin from "./buildLoginDOM"
 import loginPage from "./login"
+// news functions import below
+import addNewsItem from "../News/NewsBuilder.js"
+import newsAPIMethods from "../News/newsAPImethods.js"
+import newsClickEvents from "../News/newsClickEvents.js"
 
 
 const clickEventLogin = {
@@ -18,19 +22,27 @@ const clickEventLogin = {
                     console.log(taco)
                     console.log(userPasswordVal)
 
-                    if(taco.length <1){
+                    if (taco.length < 1) {
                         alert("USERNAME/PASSWORD DOES NOT EXIST!")
                     }
 
-                    else if(taco[0].password === userPasswordVal) {
+                    else if (taco[0].password === userPasswordVal) {
                         console.log("success")
                         sessionStorage.setItem("userId", taco[0].id)
                         document.querySelector("#loginContainer").innerHTML = ""
+                        //************  All main page stuff(click events) needs to flow to here  ***********
+                        // news clickevents below
+                        addNewsItem()
+                        newsAPIMethods.printAllUserArticles()
+                        newsClickEvents.addNewsArticle()
+                        newsClickEvents.deleteNewsArticle()
+                        newsClickEvents.editNewsArticle()
+                        newsClickEvents.saveEditedNewsArticle()
+
                         buildLogin.logout();
                         clickEventLogin.handleLogout();
-                        //************  All main page stuff(click events) needs to flow to here  ***********
                     }
-                    else{
+                    else {
                         alert("USERNAME/PASSWORD DOES NOT EXIST!")
                     }
 
@@ -95,6 +107,7 @@ const clickEventLogin = {
             console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
+            document.querySelector("#newsContainer").innerHTML = ""
             loginPage();
 
         })

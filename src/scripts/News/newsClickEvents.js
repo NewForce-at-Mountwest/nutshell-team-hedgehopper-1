@@ -20,14 +20,17 @@ const newsClickEvents = {
     },
     deleteNewsArticle: () => {
         document.querySelector("#newsContainer").addEventListener("click", () => {
+
             if (event.target.classList.contains("deleteBtn")) {
                 let articleId = event.target.id.split("-")
                 // console.log("Click", articleId, articleId[1])
-                newsAPIMethods.deleteNewsArticle(articleId[1]).then(() => {
                 document.querySelector("#savedNewsArticles").innerHTML = ""
+                newsAPIMethods.deleteNewsArticle(articleId[1]).then(() => {
+                // document.querySelector("#savedNewsArticles").innerHTML = ""
                 newsAPIMethods.printAllUserArticles()
                 })
             }
+
         })
     },
     editNewsArticle: () => {

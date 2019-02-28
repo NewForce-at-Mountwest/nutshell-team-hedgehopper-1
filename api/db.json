@@ -17,68 +17,28 @@
   "tasks": [],
   "newsArticles": [
     {
-      "artName": "Hi",
-      "artSynopsis": "Dee",
-      "artURL": "Ho",
+      "artName": "User 1",
+      "artSynopsis": "Logged In",
+      "artURL": "Here",
       "userId": "1",
-      "timestamp": 1551282000,
-      "id": 5
+      "timestamp": 1551367976,
+      "id": 1
     },
     {
-      "artName": "Where's",
-      "artSynopsis": "This",
-      "artURL": "Going?",
-      "userId": "1",
-      "timestamp": 1551320437,
-      "id": 6
-    },
-    {
-      "artName": "What",
-      "artSynopsis": "Was",
-      "artURL": "That?",
+      "artName": "User 2",
+      "artSynopsis": "Is Logged",
+      "artURL": "In Here",
       "userId": "2",
-      "timestamp": 1551296191,
-      "id": 15
+      "timestamp": 1551367986,
+      "id": 2
     },
     {
-      "artName": "Yes",
-      "artSynopsis": "No",
-      "artURL": "Maybe",
+      "artName": "User 2",
+      "artSynopsis": "Is Logged",
+      "artURL": "In Here",
       "userId": "2",
-      "timestamp": 1551297545,
-      "id": 17
-    },
-    {
-      "artName": "Are",
-      "artSynopsis": "You",
-      "artURL": "Kidding",
-      "userId": "2",
-      "timestamp": 1551297551,
-      "id": 18
-    },
-    {
-      "artName": "Yes",
-      "artSynopsis": "We",
-      "artURL": "Can",
-      "userId": "2",
-      "timestamp": 1551297569,
-      "id": 19
-    },
-    {
-      "artName": "To",
-      "artSynopsis": "The",
-      "artURL": "Top?",
-      "userId": "1",
-      "timestamp": 1551322396,
-      "id": 20
-    },
-    {
-      "artName": "Still",
-      "artSynopsis": "Working",
-      "artURL": "???",
-      "userId": "1",
-      "timestamp": 1551322540,
-      "id": 21
+      "timestamp": 1551367986,
+      "id": 3
     }
   ],
   "messages": [],
