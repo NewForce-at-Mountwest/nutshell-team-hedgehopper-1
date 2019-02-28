@@ -7,7 +7,6 @@ import clickEventLogin from "./clickEventLogin"
 
 const loginPage = ()=>{
 
-sessionStorage.length < 1
     buildLogin.loginForm();
     buildLogin.loginButton();
     buildLogin.registerButton();
