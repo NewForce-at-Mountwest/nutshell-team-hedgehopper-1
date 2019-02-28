@@ -5,6 +5,12 @@
       "password": "1",
       "email": "User1@user1.com",
       "id": 1
+    },
+    {
+      "name": "User2",
+      "password": "2",
+      "email": "User2@user2.com",
+      "id": 2
     }
   ],
   "events": [],
@@ -14,16 +20,65 @@
       "artName": "Hi",
       "artSynopsis": "Dee",
       "artURL": "Ho",
-      "userId": null,
-      "timestamp": 1551211859,
-      "id": 1
+      "userId": "1",
+      "timestamp": 1551282000,
+      "id": 5
     },
     {
-      "artName": "La",
-      "artSynopsis": "Dee",
-      "artURL": "Dah",
-      "timestamp": 1551232313,
-      "id": 2
+      "artName": "Where's",
+      "artSynopsis": "This",
+      "artURL": "Going?",
+      "userId": "1",
+      "timestamp": 1551320437,
+      "id": 6
+    },
+    {
+      "artName": "What",
+      "artSynopsis": "Was",
+      "artURL": "That?",
+      "userId": "2",
+      "timestamp": 1551296191,
+      "id": 15
+    },
+    {
+      "artName": "Yes",
+      "artSynopsis": "No",
+      "artURL": "Maybe",
+      "userId": "2",
+      "timestamp": 1551297545,
+      "id": 17
+    },
+    {
+      "artName": "Are",
+      "artSynopsis": "You",
+      "artURL": "Kidding",
+      "userId": "2",
+      "timestamp": 1551297551,
+      "id": 18
+    },
+    {
+      "artName": "Yes",
+      "artSynopsis": "We",
+      "artURL": "Can",
+      "userId": "2",
+      "timestamp": 1551297569,
+      "id": 19
+    },
+    {
+      "artName": "To",
+      "artSynopsis": "The",
+      "artURL": "Top?",
+      "userId": "1",
+      "timestamp": 1551322396,
+      "id": 20
+    },
+    {
+      "artName": "Still",
+      "artSynopsis": "Working",
+      "artURL": "???",
+      "userId": "1",
+      "timestamp": 1551322540,
+      "id": 21
     }
   ],
   "messages": [],

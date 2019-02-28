@@ -7,25 +7,26 @@ const newsClickEvents = {
         document.querySelector("#newsContainer").addEventListener("click", () => {
             if (event.target.id === "saveNewsArticle") {
                 const newArticleObject = buildArticleObject.buildNewArticleObject()
-                newsAPIMethods.postNewArticle(newArticleObject)
-                    .then((parsedArticle) => {
-                        // console.log(parsedArticle)
-                        document.querySelector("#savedNewsArticles").innerHTML = ""
-                        document.querySelector("#articleName").value = ""
-                        document.querySelector("#articleSynopsis").value = ""
-                        document.querySelector("#articleURL").value = ""
-                        newsAPIMethods.printAllUserArticles()
-                    })
-            }
-        })
+                newsAPIMethods.postNewArticle(newArticleObject).then(() => {
+                // .then((parsedArticle) => {
+                // console.log(parsedArticle)
+                document.querySelector("#savedNewsArticles").innerHTML = ""
+                document.querySelector("#articleName").value = ""
+                document.querySelector("#articleSynopsis").value = ""
+                document.querySelector("#articleURL").value = ""
+                newsAPIMethods.printAllUserArticles()
+            })
+        }})
     },
     deleteNewsArticle: () => {
         document.querySelector("#newsContainer").addEventListener("click", () => {
             if (event.target.classList.contains("deleteBtn")) {
                 let articleId = event.target.id.split("-")
-                console.log("Click", articleId, articleId[1])
-                newsAPIMethods.deleteNewsArticle(articleId[1])
+                // console.log("Click", articleId, articleId[1])
+                newsAPIMethods.deleteNewsArticle(articleId[1]).then(() => {
+                document.querySelector("#savedNewsArticles").innerHTML = ""
                 newsAPIMethods.printAllUserArticles()
+                })
             }
         })
     },
@@ -35,11 +36,11 @@ const newsClickEvents = {
                 let articleId = event.target.id.split("-")
                 // console.log("Click", articleId, articleId[1])
                 newsAPIMethods.getSingleNewsArticle(articleId[1])
-                .then((parsedArticle) => {
-                    document.querySelector(`#article-${articleId[1]}`).innerHTML = ""
-                    buildEditForm(parsedArticle)
-                })
-                // .then(newsAPIMethods.printAllUserArticles())
+                    .then((parsedArticle) => {
+                        document.querySelector(`#article-${articleId[1]}`).innerHTML = ""
+                        buildEditForm(parsedArticle)
+                        // newsAPIMethods.printAllUserArticles()
+                    })
             }
         })
     },
@@ -47,8 +48,12 @@ const newsClickEvents = {
         document.querySelector("#newsContainer").addEventListener("click", () => {
             if (event.target.classList.contains("saveBtn")) {
                 let articleId = event.target.id.split("-")
-                console.log("Click", articleId, articleId[1])
-                buildArticleObject.buildEditedArticleObject()
+                // console.log("Click", articleId, articleId[1])
+                const editedArticleObject = buildArticleObject.buildEditedArticleObject(articleId[1])
+                newsAPIMethods.putEditedArticle(articleId[1], editedArticleObject).then(() => {
+                document.querySelector("#savedNewsArticles").innerHTML = ""
+                newsAPIMethods.printAllUserArticles()
+                })
             }
         })
     }

@@ -8,7 +8,7 @@ const addNewsItem = () => {
       <input type="text" id="articleName" name="articleName" placeholder="Article Name"><br>
     <label>Article Synopsis</label>
       <input type="textarea" id="articleSynopsis" name="articleSynopsis" placeholder="Brief Description"><br>
-    <lable>Article URL</label>
+    <label>Article URL</label>
       <input type="url" id="articleURL" name="articleURL" placeholder="URL"><br>
       <br>
       <button id="saveNewsArticle">Save Article</button>

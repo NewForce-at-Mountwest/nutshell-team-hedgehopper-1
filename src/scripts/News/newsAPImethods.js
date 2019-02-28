@@ -10,12 +10,21 @@ const newsAPIMethods = {
             .then(postedArticle => postedArticle.json())
     },
     printAllUserArticles: () => {
-        fetch("http://localhost:8088/newsArticles")
-            // ?userId=${userId}
+        const userId = sessionStorage.getItem("userId")
+        fetch(`http://localhost:8088/newsArticles/?userId=${userId}`)
             .then(userArticles => userArticles.json())
             .then((parsedArticles => {
-                parsedArticles.forEach(article => {
-                    // console.log(article)
+                console.log(parsedArticles)
+
+                const sortedArray = parsedArticles.sort(function(a, b) {
+                return b.timestamp-a.timestamp
+                })
+                console.log(sortedArray)
+
+
+
+                    sortedArray.forEach(article => {
+                        // console.log(article)
                     let articleString = `<article id="article-${article.id}" class="newsArticle">
                     <h2>${article.artName}<h2>
                     <h4>${article.artSynopsis}</h4>
@@ -26,7 +35,8 @@ const newsAPIMethods = {
                     <br>`
                     document.querySelector("#savedNewsArticles").innerHTML += articleString
                 })
-            }))
+            }
+            ))
     },
     deleteNewsArticle: (articleId) => {
             return fetch(`http://localhost:8088/newsArticles/${articleId}`, {
@@ -37,6 +47,28 @@ const newsAPIMethods = {
           return fetch(`http://localhost:8088/newsArticles/${articleId}`)
                 .then(singleArticle => singleArticle.json())
                           // console.log(parsedArticle)
-           }
+    },
+
+
+
+
+    putEditedArticle: (articleId, editedArticleObject) => {
+        // console.log(articleId, editedArticleObject)
+        return fetch(`http://localhost:8088/newsArticles/${articleId}`, {
+                method: "PUT",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify(editedArticleObject)
+            })
+    }
 }
+
+
+
+
+
+
+
+
 export default newsAPIMethods

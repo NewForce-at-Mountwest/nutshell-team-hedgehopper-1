@@ -4,8 +4,8 @@ import newsAPIMethods from "./News/newsAPImethods.js"
 import newsClickEvents from "./News/newsClickEvents.js"
 
 loginPage();
-newsAPIMethods.printAllUserArticles()
 addNewsItem()
+newsAPIMethods.printAllUserArticles()
 newsClickEvents.addNewsArticle()
 newsClickEvents.deleteNewsArticle()
 newsClickEvents.editNewsArticle()

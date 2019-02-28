@@ -1,6 +1,6 @@
 
 const buildEditForm = (parsedArticle) => {
-    console.log(parsedArticle)
+    // console.log(parsedArticle)
     document.querySelector(`#article-${parsedArticle.id}`).innerHTML =
         `<article id="article-${parsedArticle.id}" class="newsArticle">
                 <label>Article Name</label>
