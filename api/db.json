@@ -17,36 +17,28 @@
   "tasks": [],
   "newsArticles": [
     {
-      "artName": "answer",
-      "artSynopsis": "is ",
-      "artURL": "yarn",
+      "artName": "This",
+      "artSynopsis": "Is",
+      "artURL": "Here",
       "userId": "1",
-      "timestamp": 1551377899,
+      "timestamp": 1551380078,
       "id": 1
     },
     {
-      "artName": "blank statement",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "1",
-      "timestamp": 1551377903,
-      "id": 2
-    },
-    {
-      "artName": "everyday",
-      "artSynopsis": "i'm ",
-      "artURL": "shuffllin",
-      "userId": "1",
-      "timestamp": 1551377987,
-      "id": 3
-    },
-    {
-      "artName": "east",
-      "artSynopsis": "west",
-      "artURL": "south",
-      "userId": "1",
-      "timestamp": 1551377949,
+      "artName": "this",
+      "artSynopsis": "blows",
+      "artURL": "goats",
+      "userId": "2",
+      "timestamp": 1551381523,
       "id": 4
+    },
+    {
+      "artName": "F'ing",
+      "artSynopsis": "dork",
+      "artURL": "tard",
+      "userId": "2",
+      "timestamp": 1551381531,
+      "id": 5
     }
   ],
   "messages": [],

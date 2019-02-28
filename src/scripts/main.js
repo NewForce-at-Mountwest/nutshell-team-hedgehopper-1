@@ -1,7 +1,7 @@
 import loginPage from "./login-logout/login"
 // import addNewsItem from "./News/newsBuilder.js"
 // import newsAPIMethods from "./News/newsAPImethods.js"
-// import newsClickEvents from "./News/newsClickEvents.js"
+import newsClickEvents from "./News/newsClickEvents.js"
 
 loginPage();
 // addNewsItem()
@@ -10,3 +10,7 @@ loginPage();
 // newsClickEvents.deleteNewsArticle()
 // newsClickEvents.editNewsArticle()
 // newsClickEvents.saveEditedNewsArticle()
+newsClickEvents.addNewsArticle()
+newsClickEvents.deleteNewsArticle()
+newsClickEvents.editNewsArticle()
+newsClickEvents.saveEditedNewsArticle()

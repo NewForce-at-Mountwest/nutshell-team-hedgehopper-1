@@ -1,4 +1,6 @@
+//handles API calls
 const newsAPIMethods = {
+    //posts new article to API
     postNewArticle: (articleObject) => {
         return fetch("http://localhost:8088/newsArticles", {
             method: "POST",
@@ -9,6 +11,7 @@ const newsAPIMethods = {
         })
             // .then(postedArticle => postedArticle.json())
     },
+    //prints all user's articles to DOMtainer
     printAllUserArticles: () => {
         const userId = sessionStorage.getItem("userId")
         fetch(`http://localhost:8088/newsArticles/?userId=${userId}`)
@@ -36,19 +39,21 @@ const newsAPIMethods = {
             }
             ))
     },
+
+    //removes article from API
     deleteNewsArticle: (articleId) => {
             return fetch(`http://localhost:8088/newsArticles/${articleId}`, {
                 method: "DELETE"
             })
     },
+
+    //retrieves single article from API
     getSingleNewsArticle: (articleId) => {
           return fetch(`http://localhost:8088/newsArticles/${articleId}`)
                 .then(singleArticle => singleArticle.json())
     },
 
-
-
-
+    //puts edited article to API
     putEditedArticle: (articleId, editedArticleObject) => {
         return fetch(`http://localhost:8088/newsArticles/${articleId}`, {
                 method: "PUT",

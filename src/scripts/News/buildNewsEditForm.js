@@ -1,4 +1,4 @@
-
+//builds prepopulated article edit form
 const buildEditForm = (parsedArticle) => {
     // console.log(parsedArticle)
     document.querySelector(`#article-${parsedArticle.id}`).innerHTML =

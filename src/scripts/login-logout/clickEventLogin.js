@@ -34,10 +34,6 @@ const clickEventLogin = {
                         // news clickevents below
                         addNewsItem()
                         newsAPIMethods.printAllUserArticles()
-                        newsClickEvents.addNewsArticle()
-                        newsClickEvents.deleteNewsArticle()
-                        newsClickEvents.editNewsArticle()
-                        newsClickEvents.saveEditedNewsArticle()
 
                         buildLogin.logout();
                         clickEventLogin.handleLogout();
