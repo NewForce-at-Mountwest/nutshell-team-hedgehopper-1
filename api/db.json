@@ -22,52 +22,6 @@
   "events": [],
   "tasks": [],
   "articles": [],
-  "messages": [
-    {
-      "message": "Welcome to the 72nd annual Golden Globes awards",
-      "userId": "3",
-      "id": 1
-    },
-    {
-      "message": "here we go again",
-      "userId": "3",
-      "id": 2
-    },
-    {
-      "message": "yup and then again",
-      "userId": "3",
-      "id": 3
-    },
-    {
-      "message": "hey buddy",
-      "userId": "3",
-      "id": 4
-    },
-    {
-      "message": "what are you up to ",
-      "userId": "1",
-      "id": 5
-    },
-    {
-      "message": "nothing much just chillin ",
-      "userId": "3",
-      "id": 6
-    },
-    {
-      "message": "thats cool",
-      "userId": "1",
-      "id": 7
-    },
-    {
-      "message": "",
-      "userId": "1",
-      "id": 8
-    },
-    {
-      "message": "",
-      "userId": "3",
-      "id": 9
-    }
-  ],
+  "messages": [],
   "friends": []
 }
