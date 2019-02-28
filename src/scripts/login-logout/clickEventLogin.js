@@ -19,7 +19,7 @@ const clickEventLogin = {
                     console.log(userPasswordVal)
 
                     if(taco.length <1){
-                        alert("WRONG PASSWORD")
+                        alert("USERNAME/PASSWORD DOES NOT EXIST")
                     }
 
                     else if(taco[0].password === userPasswordVal) {
