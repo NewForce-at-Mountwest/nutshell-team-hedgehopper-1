@@ -25,7 +25,29 @@
       "id": 4
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 1
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 2
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 3
+    }
+  ],
   "messages": [
     {
       "message": "asf",
@@ -56,6 +78,26 @@
       "message": "Yeahhhhh do the thing",
       "userId": "1",
       "id": 7
+    },
+    {
+      "message": "asdf",
+      "userId": "4",
+      "id": 8
+    },
+    {
+      "message": "russ",
+      "userId": "4",
+      "id": 9
+    },
+    {
+      "message": "nutshell drives me nuts",
+      "userId": "4",
+      "id": 10
+    },
+    {
+      "message": "who the fook made this site?!?! i want my money back",
+      "userId": "4",
+      "id": 11
     }
   ],
   "newsArticles": [
@@ -72,30 +114,6 @@
       "location": "afsdf",
       "userId": "3",
       "id": 3
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551467859,
-      "id": 4
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551467860,
-      "id": 5
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551467860,
-      "id": 6
     }
   ],
   "tasks": [],

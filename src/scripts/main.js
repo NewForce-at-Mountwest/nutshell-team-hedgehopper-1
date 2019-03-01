@@ -3,7 +3,6 @@
 import chatClickEvents from "./chatFiles/chatClickEvents";
 import loginPage from "./login-logout/login";
 import newsClickEvents from "./News/newsClickEvents.js"
-import newsClickEvents from "./News/newsClickEvents.js"
 import clickEvents from "./events/clickEvents"
 import clickEventLogin from "./login-logout/clickEventLogin.js"
 // chatAPI.getComment()
