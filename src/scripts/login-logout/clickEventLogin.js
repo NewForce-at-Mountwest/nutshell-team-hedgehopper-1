@@ -118,6 +118,9 @@ const clickEventLogin = {
             document.querySelector("#loginContainer").innerHTML = ""
             document.querySelector("#chatContainer"). innerHTML = ""
             document.querySelector("#newsContainer").innerHTML = ""
+            document.querySelector("#taskFormContainer").innerHTML = ""
+            document.querySelector("#taskDomContainer").innerHTML = ""
+            document.querySelector("#taskEditContainer").innerHTML = ""
             loginPage();
 
         })

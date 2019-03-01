@@ -35,14 +35,6 @@
       "description": "task",
       "dueDate": "",
       "complete": false,
-      "id": 3
-    },
-    {
-      "userId": "1",
-      "task": "task",
-      "description": "task",
-      "dueDate": "",
-      "complete": false,
       "id": 4
     },
     {
@@ -60,6 +52,14 @@
       "dueDate": "2019-12-31",
       "complete": false,
       "id": 6
+    },
+    {
+      "userId": "1",
+      "task": "task",
+      "description": "taskNEWedit",
+      "dueDate": "2019-12-31",
+      "complete": false,
+      "id": 7
     }
   ],
   "messages": [
