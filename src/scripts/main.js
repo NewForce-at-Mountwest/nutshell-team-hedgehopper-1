@@ -1,5 +1,12 @@
+
+
+
+
+
+
 // import chatAPI from "../chatFiles/chatAPI";
 // import chatDom from "../chatFiles/chatDom";
+import addClick from "./tasks/taskClickEvents"
 import chatClickEvents from "./chatFiles/chatClickEvents";
 import loginPage from "./login-logout/login";
 import newsClickEvents from "./News/newsClickEvents.js"
@@ -27,3 +34,7 @@ newsClickEvents.addNewsArticle()
 newsClickEvents.deleteNewsArticle()
 newsClickEvents.editNewsArticle()
 newsClickEvents.saveEditedNewsArticle()
+
+//tasks
+addClick.deleteClick()
+addClick.addNewTask()
