@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "name": "a",
+      "password": "a",
+      "email": "a",
+      "id": 1
+    },
+    {
+      "name": "s",
+      "password": "s",
+      "email": "s",
+      "id": 2
+    },
+    {
+      "name": "rob",
+      "password": "1",
+      "email": ";alskjdf;lakdfja;lksjf",
+      "id": 3
+    }
+  ],
+  "events": [],
+  "tasks": [],
+  "messages": [
+    {
+      "message": "asf",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "message": "things are done",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "please work now ",
+      "userId": "3",
+      "id": 4
+    },
+    {
+      "message": "hello yes",
+      "userId": "3",
+      "id": 5
+    },
+    {
+      "message": "playa",
+      "userId": "3",
+      "id": 6
+    },
+    {
+      "message": "Yeahhhhh do the thing",
+      "userId": "1",
+      "id": 7
+    }
+  ],
+  "newsArticles": [
+    {
+      "artName": "This",
+      "artSynopsis": "Is",
+      "artURL": "Here",
+      "userId": "1",
+      "timestamp": 1551380078,
+      "id": 1
+    },
+    {
+      "artName": "this",
+      "artSynopsis": "blows",
+      "artURL": "goats",
+      "userId": "2",
+      "timestamp": 1551381523,
+      "id": 4
+    },
+    {
+      "artName": "F'ing",
+      "artSynopsis": "dork",
+      "artURL": "tard",
+      "userId": "2",
+      "timestamp": 1551381531,
+      "id": 5
+    }
+  ],
+  "friends": []
+}
