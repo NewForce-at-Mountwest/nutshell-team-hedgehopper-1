@@ -48,6 +48,49 @@
       "id": 3
     }
   ],
+
+  "tasks": [
+    {
+      "userId": null,
+      "task": "",
+      "description": "",
+      "dueDate": "",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "task": "task",
+      "description": "task",
+      "dueDate": "",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "userId": "1",
+      "task": "task",
+      "description": "task",
+      "dueDate": "",
+      "complete": false,
+      "id": 5
+    },
+    {
+      "userId": "1",
+      "task": "newtask",
+      "description": "task",
+      "dueDate": "2019-12-31",
+      "complete": false,
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "task": "task",
+      "description": "taskNEWedit",
+      "dueDate": "2019-12-31",
+      "complete": false,
+      "id": 7
+    }
+  ],
   "messages": [
     {
       "message": "asf",
@@ -116,6 +159,6 @@
       "id": 3
     }
   ],
-  "tasks": [],
+
   "friends": []
 }

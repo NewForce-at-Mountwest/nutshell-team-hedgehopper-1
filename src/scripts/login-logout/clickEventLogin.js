@@ -4,6 +4,7 @@ import loginPage from "./login"
 import events from "../events/events.js"
 import chatDom from "../chatFiles/chatDom";
 import chatClickEvents from "../chatFiles/chatClickEvents";
+import afterLoad from "../tasks/loadTasksContent"
 
 // news functions import below
 import addNewsItem from "../News/NewsBuilder.js"
@@ -47,6 +48,7 @@ const clickEventLogin = {
                         chatDom();
                         //  chatClickEvents.postNewComment()
                         //  chatClickEvents.editComment()
+                        afterLoad();
 
                         buildLogin.logout();
                         // clickEventLogin.handleLogout();
@@ -138,6 +140,9 @@ const clickEventLogin = {
             document.querySelector("#eventDOMarea").innerHTML=""
             document.querySelector("#chatContainer"). innerHTML = ""
             document.querySelector("#newsContainer").innerHTML = ""
+            document.querySelector("#taskFormContainer").innerHTML = ""
+            document.querySelector("#taskDomContainer").innerHTML = ""
+            document.querySelector("#taskEditContainer").innerHTML = ""
             loginPage();
             }
 
