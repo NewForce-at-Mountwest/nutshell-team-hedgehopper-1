@@ -2,6 +2,8 @@ import loginApiManager from "./loginApiManager"
 import buildLogin from "./buildLoginDOM"
 import loginPage from "./login"
 import events from "../events/events.js"
+import chatDom from "../chatFiles/chatDom";
+import chatClickEvents from "../chatFiles/chatClickEvents";
 
 // news functions import below
 import addNewsItem from "../News/NewsBuilder.js"
@@ -41,12 +43,18 @@ const clickEventLogin = {
                         // news clickevents below
                         addNewsItem()
                         newsAPIMethods.printAllUserArticles()
+                        //************ Chat Functions *************/
+                        chatDom();
+                        //  chatClickEvents.postNewComment()
+                        //  chatClickEvents.editComment()
 
                         buildLogin.logout();
                         // clickEventLogin.handleLogout();
                         //************  All main page stuff(click events) needs to flow to here  ***********
                        //events
                         events.event()
+                        // clickEventLogin.handleLogout();
+
 
 
 
@@ -128,6 +136,7 @@ const clickEventLogin = {
             document.querySelector("#loginContainer").innerHTML = ""
             document.querySelector("#eventFormArea").innerHTML=""
             document.querySelector("#eventDOMarea").innerHTML=""
+            document.querySelector("#chatContainer"). innerHTML = ""
             document.querySelector("#newsContainer").innerHTML = ""
             loginPage();
             }

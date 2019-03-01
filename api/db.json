@@ -1,8 +1,21 @@
 {
   "users": [
     {
-      "name": "russ",
-      "password": "russ",
+      "name": "a",
+      "password": "a",
+      "email": "a",
+      "id": 1
+    },
+    {
+      "name": "s",
+      "password": "s",
+      "email": "s",
+      "id": 2
+    },
+    {
+      "name": "rob",
+      "password": "1",
+      "email": ";alskjdf;lakdfja;lksjf",
       "id": 3
     },
     {
@@ -10,27 +23,42 @@
       "password": "r",
       "email": "r",
       "id": 4
+    }
+  ],
+  "events": [],
+  "messages": [
+    {
+      "message": "asf",
+      "userId": "1",
+      "id": 2
     },
     {
-      "name": "asdf",
-      "password": "asdf",
-      "email": "asdf",
+      "message": "things are done",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "please work now ",
+      "userId": "3",
+      "id": 4
+    },
+    {
+      "message": "hello yes",
+      "userId": "3",
       "id": 5
     },
     {
-      "name": "g",
-      "password": "g",
-      "email": "g",
+      "message": "playa",
+      "userId": "3",
       "id": 6
     },
     {
-      "name": "a",
-      "password": "a",
-      "email": "a",
+      "message": "Yeahhhhh do the thing",
+      "userId": "1",
       "id": 7
     }
   ],
-  "events": [
+  "newsArticles": [
     {
       "name": "zsdf",
       "date": "2019-02-05",
@@ -46,47 +74,30 @@
       "id": 3
     },
     {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
-      "id": 4
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
-      "id": 5
-    }
-  ],
-  "tasks": [],
-  "newsArticles": [
-    {
       "artName": "",
       "artSynopsis": "",
       "artURL": "",
-      "userId": "5",
-      "timestamp": 1551453171,
+      "userId": "4",
+      "timestamp": 1551467859,
       "id": 4
     },
     {
       "artName": "",
       "artSynopsis": "",
       "artURL": "",
-      "userId": "5",
-      "timestamp": 1551453173,
+      "userId": "4",
+      "timestamp": 1551467860,
       "id": 5
     },
     {
       "artName": "",
       "artSynopsis": "",
       "artURL": "",
-      "userId": "5",
-      "timestamp": 1551453173,
+      "userId": "4",
+      "timestamp": 1551467860,
       "id": 6
     }
   ],
-  "messages": [],
+  "tasks": [],
   "friends": []
 }
