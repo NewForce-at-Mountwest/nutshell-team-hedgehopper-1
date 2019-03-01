@@ -12,8 +12,8 @@ const clickEvents = {
         document.querySelector("#eventFormArea").addEventListener("click", () => {
             if(event.target.id ==="newEvent"){
                 buildEvents.newEventForm()
-            clickEvents.saveEvent();
-            clickEvents.closeEventForm();
+            // clickEvents.saveEvent();
+            // clickEvents.closeEventForm();
 
             }
 
@@ -52,7 +52,7 @@ const clickEvents = {
             if(event.target.id ==="closeEventForm"){
                 document.querySelector("#eventFormArea").innerHTML = ""
             buildEvents.newEventButton();
-            clickEvents.newForm()
+            // clickEvents.newForm()
             }
 
 

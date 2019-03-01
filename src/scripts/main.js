@@ -9,6 +9,8 @@ loginPage();
 clickEventLogin.handleCreateAccount();
 clickEventLogin.handleLogin();
 clickEventLogin.handleLogout();
+clickEventLogin.handleRegistration();
+clickEvents.closeEventForm();
 
 
 // addNewsItem()
@@ -26,3 +28,13 @@ newsClickEvents.saveEditedNewsArticle()
 //Events
 clickEvents.deleteEvent()
 clickEvents.newForm();
+clickEvents.saveEvent();
+
+
+
+
+
+
+
+
+

@@ -36,7 +36,7 @@ const clickEventLogin = {
                         document.querySelector("#loginContainer").innerHTML = ""
                         //************  All main page stuff(click events) needs to flow to here  ***********
 
-                        events.event()
+
 
                         // news clickevents below
                         addNewsItem()
@@ -46,7 +46,7 @@ const clickEventLogin = {
                         // clickEventLogin.handleLogout();
                         //************  All main page stuff(click events) needs to flow to here  ***********
                        //events
-
+                        events.event()
 
 
 
@@ -66,8 +66,8 @@ const clickEventLogin = {
         document.querySelector("#loginContainer").addEventListener("click", () => {
             if(event.target.id==="completeRegistration"){
                 const newUserName = document.querySelector("#createUserName").value
-            const newUserPass = document.querySelector("#createPassword").value
-            const newUserEmail = document.querySelector("#email").value
+                const newUserPass = document.querySelector("#createPassword").value
+                const newUserEmail = document.querySelector("#email").value
 
             const newUser = {
                 name: newUserName,
@@ -112,7 +112,7 @@ const clickEventLogin = {
             document.querySelector("#loginContainer").innerHTML = ""
             buildLogin.registerForm();
             buildLogin.completeRegistrationButton();
-            clickEventLogin.handleRegistration();
+            // clickEventLogin.handleRegistration();
             }
 
 
@@ -126,7 +126,8 @@ const clickEventLogin = {
                 console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
-            document.querySelector("#events").innerHTML=""
+            document.querySelector("#eventFormArea").innerHTML=""
+            document.querySelector("#eventDOMarea").innerHTML=""
             document.querySelector("#newsContainer").innerHTML = ""
             loginPage();
             }

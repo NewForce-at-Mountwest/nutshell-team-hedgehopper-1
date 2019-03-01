@@ -22,6 +22,12 @@
       "password": "g",
       "email": "g",
       "id": 6
+    },
+    {
+      "name": "a",
+      "password": "a",
+      "email": "a",
+      "id": 7
     }
   ],
   "events": [
@@ -52,41 +58,10 @@
       "location": "",
       "userId": "4",
       "id": 5
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
-      "id": 6
     }
   ],
   "tasks": [],
   "newsArticles": [
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551453158,
-      "id": 1
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551453160,
-      "id": 2
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "",
-      "userId": "4",
-      "timestamp": 1551453161,
-      "id": 3
-    },
     {
       "artName": "",
       "artSynopsis": "",
