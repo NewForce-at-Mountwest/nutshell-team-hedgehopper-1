@@ -10,6 +10,18 @@
       "password": "r",
       "email": "r",
       "id": 4
+    },
+    {
+      "name": "asdf",
+      "password": "asdf",
+      "email": "asdf",
+      "id": 5
+    },
+    {
+      "name": "g",
+      "password": "g",
+      "email": "g",
+      "id": 6
     }
   ],
   "events": [
@@ -28,36 +40,78 @@
       "id": 3
     },
     {
-      "name": "warety",
-      "date": "2019-02-05",
-      "location": "asdfasdf",
+      "name": "",
+      "date": "",
+      "location": "",
       "userId": "4",
       "id": 4
     },
     {
-      "name": "warety",
-      "date": "2019-02-05",
-      "location": "asdfasdf",
+      "name": "",
+      "date": "",
+      "location": "",
       "userId": "4",
       "id": 5
     },
     {
-      "name": "warety",
-      "date": "2019-02-05",
-      "location": "asdfasdf",
+      "name": "",
+      "date": "",
+      "location": "",
       "userId": "4",
       "id": 6
-    },
-    {
-      "name": "russ",
-      "date": "2018-11-02",
-      "location": "my place",
-      "userId": "4",
-      "id": 7
     }
   ],
   "tasks": [],
-  "articles": [],
+  "newsArticles": [
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "4",
+      "timestamp": 1551453158,
+      "id": 1
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "4",
+      "timestamp": 1551453160,
+      "id": 2
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "4",
+      "timestamp": 1551453161,
+      "id": 3
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "5",
+      "timestamp": 1551453171,
+      "id": 4
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "5",
+      "timestamp": 1551453173,
+      "id": 5
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "",
+      "userId": "5",
+      "timestamp": 1551453173,
+      "id": 6
+    }
+  ],
   "messages": [],
   "friends": []
 }

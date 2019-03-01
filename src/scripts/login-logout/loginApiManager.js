@@ -7,7 +7,7 @@ const loginApiManager = {
 
     //takes a new user and will post it to the user table in db.json
     postNewUser : (newUser) =>{
-            fetch("http://localhost:8088/users", {
+            return fetch("http://localhost:8088/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

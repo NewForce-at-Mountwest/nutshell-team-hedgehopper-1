@@ -7,9 +7,9 @@ import printEventDOM from "./printEventDOM";
 const events = {
     event: ()=>{
         buildEvents.newEventButton();
-        clickEvents.newForm();
+        // clickEvents.newForm();
         printEventDOM()
-        clickEvents.deleteEvent()
+        // clickEvents.deleteEvent()
 
 
 

@@ -8,18 +8,23 @@ const clickEvents = {
 
 
     newForm: () => {
-        document.querySelector("#newEvent").addEventListener("click", () => {
-            buildEvents.newEventForm()
+
+        document.querySelector("#eventFormArea").addEventListener("click", () => {
+            if(event.target.id ==="newEvent"){
+                buildEvents.newEventForm()
             clickEvents.saveEvent();
             clickEvents.closeEventForm();
+
+            }
 
 
         })
     },
 
     saveEvent: () => {
-        document.querySelector("#saveEvent").addEventListener("click", () => {
-            console.log("you clicked save event")
+        document.querySelector("#eventFormArea").addEventListener("click", () => {
+            if(event.target.id==="saveEvent"){
+                console.log("you clicked save event")
             let name = document.querySelector("#eventName").value
             let date = document.querySelector("#eventDate").value
             let location = document.querySelector("#eventLocation").value
@@ -35,16 +40,21 @@ const clickEvents = {
                 printEventDOM()
             })
 
+            }
+
 
 
         })
     },
 
     closeEventForm: () => {
-        document.querySelector("#closeEventForm").addEventListener("click", () => {
-            document.querySelector("#eventFormArea").innerHTML = ""
+        document.querySelector("#eventFormArea").addEventListener("click", () => {
+            if(event.target.id ==="closeEventForm"){
+                document.querySelector("#eventFormArea").innerHTML = ""
             buildEvents.newEventButton();
             clickEvents.newForm()
+            }
+
 
         })
     },
