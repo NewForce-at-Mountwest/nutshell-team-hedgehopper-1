@@ -1,7 +1,7 @@
 import printToDom from "./taskPrintDom"
 import taskFormBuilder from "./taskForm"
 import apiManager from "./taskApiManger"
-import buildTaskObject from "./taskObjectBuilder"
+import buildObjects from "./taskObjectBuilder"
 //adds click event to add new task button
 const addClick = {
 
@@ -11,7 +11,7 @@ addNewTask: () =>{ document.querySelector("#taskFormContainer").addEventListener
     if (event.target.id === "saveTask") {
       console.log("clicked it!")
 
-  apiManager.postTask(buildTaskObject())
+  apiManager.postTask(buildObjects.buildTaskObject())
   // .then(apiManager.getTasks)
   .then(() => {
     printToDom.buildTaskList(sessionStorage.getItem("userId"))
@@ -65,27 +65,12 @@ const singleTask = apiManager.editTask(taskId)
   else if
   (event.target.classList.contains("saveEdit")){
     console.log("saved")
-    // console.log(event.target)
     const taskId = event.target.id.split("-")[1];
-    const editedTask = document.querySelector(`#taskNameEdit-${taskId}`).value;
-    const editedDescription = document.querySelector(`#taskDescriptionEdit-${taskId}`).value;
-    const editedDueDate = document.querySelector(`#taskDueDateEdit-${taskId}`).value;
-
-
-    editTaskObject = buildTaskObject(editedTask, editedDescription, editedDueDate)
-    apiManager.putEdit(taskId, editTaskObject)
+    console.log(taskId)
+    apiManager.putEdit(taskId, buildObjects.buildEditObject(taskId))
     .then(() => {
       printToDom.buildTaskList(sessionStorage.getItem("userId"))
     })
-    // .then(document.querySelector("#taskDomContainer").innerHTML = printToDom.buildTaskList()
-
-  // const editedCompleted = document.querySelector(`#completed-edit-input-${taskId}`).value;
-    // apiManager.getSingleTask(taskId)
-    // .then(() => {
-    //   document.querySelector("#taskDomContainer").innerHTML = printToDom.buildTaskList()
-    // }
-    // )
-    // )
   }
   })},
   // editClick: () => {

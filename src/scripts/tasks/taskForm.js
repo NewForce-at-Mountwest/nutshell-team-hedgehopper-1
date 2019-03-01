@@ -1,5 +1,5 @@
 import apiManager from "./taskApiManger"
-import buildTaskObject from "./taskObjectBuilder"
+import buildObjects from "./taskObjectBuilder"
 import addClick from "./taskClickEvents"
 
 //builds the task form
@@ -21,10 +21,11 @@ const taskFormBuilder = {
 
     buildEditForm: (editTask) => {
         return `
-        <div class="editForm" id=editTask-${editTask.id}>
-        <input type="text" class="editTask" value=${editTask.task} id="taskNameEdit-${editTask.task}">
-        <input type="text" class="editTask" value=${editTask.description} id="taskDescriptionEdit-${editTask.description}">
-        <input type="date" class="editDate" value= ${taskDueDate} id="taskDueDateEdit-${editTask.dueDate}">
+        <div class="editForm" id="editTask-${editTask.id}">
+        <input type="text" class="editTask" value="${editTask.task}" id="taskNameEdit-${editTask.id}">
+        <input type="text" class="editTask" value="${editTask.description}" id="taskDescriptionEdit-${editTask.id}">
+        <input type="date" class="editDate" value= "${editTask.dueDate}" id="taskDueDateEdit-${editTask.id}">
+        <input class="checkbox" id="checkbox-${editTask.complete}" type="checkbox">
         <button class="saveEdit" id="save-${editTask.id}">Save Task</button>
         `
     },
