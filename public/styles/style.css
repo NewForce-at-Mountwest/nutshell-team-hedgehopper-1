@@ -18,3 +18,12 @@
   display: flex;
   flex-direction: column
 }
+
+.newsArticle {
+  border: 1px solid black;
+  /* width: 45% */
+}
+
+#newsContainer {
+  width: 45%
+}

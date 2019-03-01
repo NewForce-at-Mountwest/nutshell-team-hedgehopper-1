@@ -9,7 +9,8 @@ const addNewsItem = () => {
     <label>Article Synopsis</label>
       <input type="textarea" id="articleSynopsis" name="articleSynopsis" placeholder="Brief Description"><br>
     <label>Article URL</label>
-      <input type="url" id="articleURL" name="articleURL" placeholder="URL"><br>
+      <input type="url" id="articleURL" name="articleURL" placeholder="https://example.com"
+      pattern="https://.*"><br>
       <br>
       <button id="saveNewsArticle">Save Article</button>
     </fieldset>

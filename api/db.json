@@ -77,6 +77,22 @@
       "userId": "2",
       "timestamp": 1551381531,
       "id": 5
+    },
+    {
+      "artName": "",
+      "artSynopsis": "",
+      "artURL": "www.dothething.com",
+      "userId": "1",
+      "timestamp": 1551458278,
+      "id": 6
+    },
+    {
+      "artName": "Is",
+      "artSynopsis": "This",
+      "artURL": "http://www.google.com",
+      "userId": "1",
+      "timestamp": 1551458586,
+      "id": 7
     }
   ],
   "friends": []

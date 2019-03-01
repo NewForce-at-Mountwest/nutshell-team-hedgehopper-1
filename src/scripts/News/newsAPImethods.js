@@ -27,9 +27,10 @@ const newsAPIMethods = {
                     sortedArray.forEach(article => {
                         // console.log(article)
                     let articleString = `<article id="article-${article.id}" class="newsArticle">
-                    <h2>${article.artName}<h2>
-                    <h4>${article.artSynopsis}</h4>
-                    <h4>${article.artURL}</h4>
+                    <h3>${article.artName}<h3>
+                    <p>${article.artSynopsis}<p>
+                    <a href="${article.artURL}">${article.artURL}</a><br>
+                    <br>
                     <button id="editBtn-${article.id}" class="editBtn">Edit This Saved Article</button>
                     <button id="deleteBtn-${article.id}" class="deleteBtn">Delete This Article</button>
                     </article>
