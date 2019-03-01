@@ -5,13 +5,13 @@ import addClick from "./taskClickEvents"
 //builds the task form
 
 const taskFormBuilder = {
-    buildTaskForm: () => {
+    buildTaskForm: (userId) => {
         return `
         <div id = "taskForm">
         <h3>Add new task</h3>
-        <input type="text" id="taskName" placeholder="task name"></input>
-        <input type="text" id="taskDescription" placeholder="description"></input>
-        <input type="date" id="taskDueDate"></input>
+        <input type="text" id="taskName-${userId}" placeholder="task name"></input>
+        <input type="text" id="taskDescription-${userId}" placeholder="description"></input>
+        <input type="date" id="taskDueDate-${userId}"></input>
         <button id="saveTask">Add Task</button>
         </div>
         `

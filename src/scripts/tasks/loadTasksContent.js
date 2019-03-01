@@ -8,8 +8,8 @@ const afterLoad=() => {
     document.querySelector("#taskFormContainer").innerHTML = taskFormBuilder.buildTaskForm()
 
     // printToDom.button(userId);
-    addClick.addNewTask();
-    addClick.deleteClick();
+    // addClick.addNewTask();
+    // addClick.deleteClick();
 
 
 }

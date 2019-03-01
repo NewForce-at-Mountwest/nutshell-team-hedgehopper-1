@@ -2,10 +2,10 @@
 
 //builds task object for logged in user
 const buildObjects = {
-buildTaskObject: () => {
-   const taskName = document.querySelector("#taskName").value
-   const taskDescription = document.querySelector("#taskDescription").value
-    const taskDueDate = document.querySelector("#taskDueDate").value
+buildTaskObject: (userId) => {
+   const taskName = document.querySelector(`#taskName-${userId}`).value
+   const taskDescription = document.querySelector(`#taskDescription-${userId}`).value
+    const taskDueDate = document.querySelector(`#taskDueDate-${userId}`).value
     const isItComplete = false
 
 

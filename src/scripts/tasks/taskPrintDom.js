@@ -22,22 +22,24 @@ const printToDom = {
         //     document.querySelector("#taskDomContainer").innerHTML = `<button type="button" id="addTaskBtn-${userId}">New Task</button>`
         //   },    //print form
         //   newTaskForm: () => {
-        //     document.querySelector("#taskDomContainer").innerHTML = taskFormBuilder.buildTaskForm();
-        //   },  //print edit form
+        //     document.querySelector("#taskFormContainer").innerHTML = taskFormBuilder.buildTaskForm();
+        //   },
+        //print edit form
         //   editForm: (taskObject) => {
         //     document.querySelector("#taskEditContainer").innerHTML = taskFormBuilder.buildEditForm(taskObject);
         //   },  saveButton: (userId) => {
         //     document.querySelector("#taskEditContainer").innerHTML = taskFormBuilder.saveButton(userId)
-        //   },  taskbox: () => {
+        //   },
+        // taskbox: () => {
         //     document.querySelector("#taskDomContainer").innerHTML = `<div id="taskHeader">TASKS</div>
         //       <div id="taskListContainer"></div><`
         //   },
 
 
-printForm: () => {
-    document.getElementById("taskFormContainer").innerHTML = taskFormBuilder.buildTaskForm();
+// printForm: () => {
+//     document.getElementById("taskFormContainer").innerHTML = taskFormBuilder.buildTaskForm();
 
-}
+// }
 }
 
 export default printToDom

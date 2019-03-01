@@ -4,13 +4,13 @@ const apiManager = {
     //fetches users tasks
     getTasks: (userId) => {
 
-        return fetch(`http://localhost:8089/tasks?userId=${userId}`)
+        return fetch(`http://localhost:8088/tasks?userId=${userId}`)
         .then(r => r.json())
     },
     //posts new tasks
 postTask: (taskObject) => {
 
-    return fetch("http://localhost:8089/tasks", {
+    return fetch("http://localhost:8088/tasks", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -20,14 +20,14 @@ postTask: (taskObject) => {
 },
 //edit tasks
 editTask: (taskId) => {
-    return fetch(`http://localhost:8089/tasks/${taskId}`)
+    return fetch(`http://localhost:8088/tasks/${taskId}`)
     .then(singleTask=>singleTask.json())
 
   },
 
 //putEdit method
 putEdit: (taskId, taskObject) => {
-  return fetch(`http://localhost:8089/tasks/${taskId}`,{
+  return fetch(`http://localhost:8088/tasks/${taskId}`,{
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
@@ -39,18 +39,18 @@ putEdit: (taskId, taskObject) => {
 
   //deletes task
 
-deleteTask: taskId => {
-    return fetch(`http://localhost:8089/tasks/${taskId}`, {
+deleteTask: (taskId) => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
       method: "DELETE"
     });
   },
 
-  getSingleTask: taskId => fetch(`http://localhost:8089/tasks/${taskId}`)
+  getSingleTask: (taskId) => fetch(`http://localhost:8088/tasks/${taskId}`)
 .then(singleTask => singleTask.json()),
 
 
-markAsComplete: taskId => {
-    return fetch(`http://localhost:8089/tasks/${taskId}`, {
+markAsComplete: (taskId) => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -60,7 +60,7 @@ markAsComplete: taskId => {
   },
 
 markAsIncomplete: taskId => {
-    return fetch(`http://localhost:8089/tasks/${taskId}`, {
+    return fetch(`http://localhost:8088/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
