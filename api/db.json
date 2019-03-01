@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "User1",
+      "password": "1",
+      "email": "User1@user1.com",
+      "id": 1
+    },
+    {
+      "name": "User2",
+      "password": "2",
+      "email": "User2@user2.com",
+      "id": 2
+    }
+  ],
+  "events": [],
+  "tasks": [],
+  "newsArticles": [
+    {
+      "artName": "This",
+      "artSynopsis": "Is",
+      "artURL": "Here",
+      "userId": "1",
+      "timestamp": 1551380078,
+      "id": 1
+    },
+    {
+      "artName": "this",
+      "artSynopsis": "blows",
+      "artURL": "goats",
+      "userId": "2",
+      "timestamp": 1551381523,
+      "id": 4
+    },
+    {
+      "artName": "F'ing",
+      "artSynopsis": "dork",
+      "artURL": "tard",
+      "userId": "2",
+      "timestamp": 1551381531,
+      "id": 5
+    }
+  ],
+  "messages": [],
+  "friends": []
+}
