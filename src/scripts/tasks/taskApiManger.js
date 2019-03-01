@@ -19,15 +19,23 @@ postTask: (taskObject) => {
     })
 },
 //edit tasks
-editTask: (taskId, taskObject) => {
-    return fetch(`http://localhost:8089/tasks/${taskId}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type" : "application/json"
-      },
-      body: JSON.stringify(taskObject)
-    })
+editTask: (taskId) => {
+    return fetch(`http://localhost:8089/tasks/${taskId}`)
+    .then(singleTask=>singleTask.json())
+
   },
+
+//putEdit method
+putEdit: (taskId, taskObject) => {
+  return fetch(`http://localhost:8089/tasks/${taskId}`,{
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(taskObject)
+  })
+
+},
 
   //deletes task
 

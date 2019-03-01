@@ -22,12 +22,13 @@ const taskFormBuilder = {
     buildEditForm: (editTask) => {
         return `
         <div class="editForm" id=editTask-${editTask.id}>
-        <input type="text" class="edit" value=${editTask.task} id="taskNameEdit-${editTask.task}">
-        <input type="text" class="edit" value=${editTask.description} id="taskDescriptionEdit-${editTask.description}">
+        <input type="text" class="editTask" value=${editTask.task} id="taskNameEdit-${editTask.task}">
+        <input type="text" class="editTask" value=${editTask.description} id="taskDescriptionEdit-${editTask.description}">
+        <input type="date" class="editDate" value= ${taskDueDate} id="taskDueDateEdit-${editTask.dueDate}">
         <button class="saveEdit" id="save-${editTask.id}">Save Task</button>
         `
     },
-    // <input type="date" class="edit" value= ${editTask.dueDate} id="taskDueDateEdit-${editTask.dueDate}">
+
 
     buildSingleTask: (singleTaskObject) => {
         return `<div class="task" id="task-${singleTaskObject.id}">

@@ -55,9 +55,9 @@ deleteClick: () => {
     // ---- EVENT LISTENER FOR EDIT BUTTON --//
   } else if(event.target.classList.contains("edit")){
     const taskId = event.target.id.split("-")[1];
-    apiManager.editTask(taskId)
+const singleTask = apiManager.editTask(taskId)
     .then((singleTask) => {
-      console.log("tasksss");
+      console.log("tasksss")
       document.querySelector("#taskDomContainer").innerHTML += taskFormBuilder.buildEditForm(singleTask);
     })
   // --- EVENT LISTENER FOR EDIT SAVE BUTTON --//
@@ -65,13 +65,26 @@ deleteClick: () => {
   else if
   (event.target.classList.contains("saveEdit")){
     console.log("saved")
+    // console.log(event.target)
     const taskId = event.target.id.split("-")[1];
-    console.log(event.target)
-    console.log(taskId)
+    const editedTask = document.querySelector(`#taskNameEdit-${taskId}`).value;
+    const editedDescription = document.querySelector(`#taskDescriptionEdit-${taskId}`).value;
+    const editedDueDate = document.querySelector(`#taskDueDateEdit-${taskId}`).value;
+
+
+    editTaskObject = buildTaskObject(editedTask, editedDescription, editedDueDate)
+    apiManager.putEdit(taskId, editTaskObject)
+    .then(() => {
+      printToDom.buildTaskList(sessionStorage.getItem("userId"))
+    })
+    // .then(document.querySelector("#taskDomContainer").innerHTML = printToDom.buildTaskList()
+
+  // const editedCompleted = document.querySelector(`#completed-edit-input-${taskId}`).value;
     // apiManager.getSingleTask(taskId)
     // .then(() => {
     //   document.querySelector("#taskDomContainer").innerHTML = printToDom.buildTaskList()
     // }
+    // )
     // )
   }
   })},
