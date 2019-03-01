@@ -10,7 +10,8 @@ import addClick from "./tasks/taskClickEvents"
 import chatClickEvents from "./chatFiles/chatClickEvents";
 import loginPage from "./login-logout/login";
 import newsClickEvents from "./News/newsClickEvents.js"
-
+import clickEvents from "./events/clickEvents"
+import clickEventLogin from "./login-logout/clickEventLogin.js"
 // chatAPI.getComment()
 // .then((word) => {
 //     console.log(word)
@@ -23,7 +24,16 @@ chatClickEvents.editComment()
 // import addNewsItem from "./News/newsBuilder.js"
 // import newsAPIMethods from "./News/newsAPImethods.js"
 
+//Login
+
 loginPage();
+clickEventLogin.handleCreateAccount();
+clickEventLogin.handleLogin();
+clickEventLogin.handleLogout();
+clickEventLogin.handleRegistration();
+clickEvents.closeEventForm();
+
+
 // addNewsItem()
 // newsAPIMethods.printAllUserArticles()
 // newsClickEvents.addNewsArticle()
@@ -34,6 +44,20 @@ newsClickEvents.addNewsArticle()
 newsClickEvents.deleteNewsArticle()
 newsClickEvents.editNewsArticle()
 newsClickEvents.saveEditedNewsArticle()
+
+
+//Events
+clickEvents.deleteEvent()
+clickEvents.newForm();
+clickEvents.saveEvent();
+
+
+
+
+
+
+
+
 
 //tasks
 addClick.deleteClick()

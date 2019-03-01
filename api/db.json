@@ -17,9 +17,38 @@
       "password": "1",
       "email": ";alskjdf;lakdfja;lksjf",
       "id": 3
+    },
+    {
+      "name": "r",
+      "password": "r",
+      "email": "r",
+      "id": 4
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 1
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 2
+    },
+    {
+      "name": "",
+      "date": "",
+      "location": "",
+      "userId": "4",
+      "id": 3
+    }
+  ],
+
   "tasks": [
     {
       "userId": null,
@@ -92,33 +121,44 @@
       "message": "Yeahhhhh do the thing",
       "userId": "1",
       "id": 7
+    },
+    {
+      "message": "asdf",
+      "userId": "4",
+      "id": 8
+    },
+    {
+      "message": "russ",
+      "userId": "4",
+      "id": 9
+    },
+    {
+      "message": "nutshell drives me nuts",
+      "userId": "4",
+      "id": 10
+    },
+    {
+      "message": "who the fook made this site?!?! i want my money back",
+      "userId": "4",
+      "id": 11
     }
   ],
   "newsArticles": [
     {
-      "artName": "This",
-      "artSynopsis": "Is",
-      "artURL": "Here",
-      "userId": "1",
-      "timestamp": 1551380078,
+      "name": "zsdf",
+      "date": "2019-02-05",
+      "location": "afsdf",
+      "userId": "3",
       "id": 1
     },
     {
-      "artName": "this",
-      "artSynopsis": "blows",
-      "artURL": "goats",
-      "userId": "2",
-      "timestamp": 1551381523,
-      "id": 4
-    },
-    {
-      "artName": "F'ing",
-      "artSynopsis": "dork",
-      "artURL": "tard",
-      "userId": "2",
-      "timestamp": 1551381531,
-      "id": 5
+      "name": "zsdf",
+      "date": "2019-02-03",
+      "location": "afsdf",
+      "userId": "3",
+      "id": 3
     }
   ],
+
   "friends": []
 }
