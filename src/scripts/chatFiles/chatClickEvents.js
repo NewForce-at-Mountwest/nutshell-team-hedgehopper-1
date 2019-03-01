@@ -16,9 +16,9 @@ const chatClickEvents = {
         .then(comments => {
           document.querySelector("#chat-area").innerHTML = "";
           comments.forEach(comment => {
-            document.querySelector("#chat-area").innerHTML += `<p class="${comment.id}" id="edit-${
+            document.querySelector("#chat-area").innerHTML += `<p id="edit-${
               comment.id
-            }" class="edit">${comment.user.name}:  ${comment.message}</p>`;
+            }" class="edit ${comment.userId}">${comment.user.name}:  ${comment.message}</p>`;
             scrollToBottom();
           });
           document.querySelector("#type-here").value = "";
@@ -58,7 +58,7 @@ const chatClickEvents = {
 
 
 
-                    document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit">${comment.user.name}:  ${comment.message}</p>`
+                    document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit ${comment.userId}">${comment.user.name}:  ${comment.message}</p>`
                     scrollToBottom()
                     this.isOpen = false
                 })

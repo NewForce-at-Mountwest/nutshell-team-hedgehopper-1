@@ -2,8 +2,7 @@
 
 const editObjectBuilder = (commentId) => {
     const chatMessage = document.querySelector(`#edited-${commentId}`).value
-    const usersId = commentId.userId
-
+    const usersId = sessionStorage.getItem("userId")
 
     return {
         message: chatMessage,

@@ -4,6 +4,10 @@ import loginPage from "./login"
 import chatDom from "../chatFiles/chatDom";
 import chatClickEvents from "../chatFiles/chatClickEvents";
 
+// news functions import below
+import addNewsItem from "../News/NewsBuilder.js"
+import newsAPIMethods from "../News/newsAPImethods.js"
+import newsClickEvents from "../News/newsClickEvents.js"
 
 
 const clickEventLogin = {
@@ -21,27 +25,31 @@ const clickEventLogin = {
                     console.log(taco)
                     console.log(userPasswordVal)
 
-                    if(taco.length <1){
+                    if (taco.length < 1) {
                         alert("USERNAME/PASSWORD DOES NOT EXIST!")
                     }
 
-                    else if(taco[0].password === userPasswordVal) {
+                    else if (taco[0].password === userPasswordVal) {
                         console.log("success")
                         sessionStorage.setItem("userId", taco[0].id)
                         document.querySelector("#loginContainer").innerHTML = ""
-                        buildLogin.logout();
-                        clickEventLogin.handleLogout();
                         //************  All main page stuff(click events) needs to flow to here  ***********
-
-
+                        // news clickevents below
+                        addNewsItem()
+                        newsAPIMethods.printAllUserArticles()
                         //************ Chat Functions *************/
                         chatDom();
                         //  chatClickEvents.postNewComment()
                         //  chatClickEvents.editComment()
 
+                        buildLogin.logout();
+                        clickEventLogin.handleLogout();
+
+
+
 
                     }
-                    else{
+                    else {
                         alert("USERNAME/PASSWORD DOES NOT EXIST!")
                     }
 
@@ -107,6 +115,7 @@ const clickEventLogin = {
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
             document.querySelector("#chatContainer"). innerHTML = ""
+            document.querySelector("#newsContainer").innerHTML = ""
             loginPage();
 
         })

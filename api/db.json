@@ -21,217 +21,62 @@
   ],
   "events": [],
   "tasks": [],
-  "articles": [],
   "messages": [
     {
-      "message": "a",
-      "userId": "1",
-      "id": 1
-    },
-    {
-      "message": "ask",
+      "message": "asf",
       "userId": "1",
       "id": 2
     },
     {
-      "message": "a",
+      "message": "things are done",
       "userId": "1",
       "id": 3
     },
     {
-      "message": "asasasaaa",
-      "userId": "1",
+      "message": "please work now ",
+      "userId": "3",
       "id": 4
     },
     {
-      "message": "yoo",
-      "userId": "1",
+      "message": "hello yes",
+      "userId": "3",
       "id": 5
     },
     {
-      "message": "bananas",
-      "userId": "1",
+      "message": "playa",
+      "userId": "3",
       "id": 6
     },
     {
-      "message": "monkey rat",
+      "message": "Yeahhhhh do the thing",
       "userId": "1",
       "id": 7
-    },
+    }
+  ],
+  "newsArticles": [
     {
-      "message": "zombie",
+      "artName": "This",
+      "artSynopsis": "Is",
+      "artURL": "Here",
       "userId": "1",
-      "id": 8
+      "timestamp": 1551380078,
+      "id": 1
     },
     {
-      "message": "not sure what i'm saying",
-      "userId": "1",
-      "id": 9
+      "artName": "this",
+      "artSynopsis": "blows",
+      "artURL": "goats",
+      "userId": "2",
+      "timestamp": 1551381523,
+      "id": 4
     },
     {
-      "message": "asfasfasfsadf",
-      "userId": "1",
-      "id": 10
-    },
-    {
-      "message": "ooooohhhhhh yeeeeaaaaaaj",
-      "userId": "1",
-      "id": 11
-    },
-    {
-      "message": "booooooom",
-      "userId": "1",
-      "id": 12
-    },
-    {
-      "message": "ughghghghghghg",
-      "userId": "1",
-      "id": 13
-    },
-    {
-      "message": ";osafsj;ldasfjk;lfsad",
-      "userId": "1",
-      "id": 14
-    },
-    {
-      "message": "woek plase",
-      "userId": "1",
-      "id": 15
-    },
-    {
-      "message": "again and again",
-      "userId": "1",
-      "id": 16
-    },
-    {
-      "message": "apples to oranges",
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "message": "barnacle",
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "message": "bananas",
-      "userId": "1",
-      "id": 19
-    },
-    {
-      "message": "apples",
-      "userId": "1",
-      "id": 20
-    },
-    {
-      "message": "bananas",
-      "userId": "1",
-      "id": 21
-    },
-    {
-      "message": "\"\"",
-      "userId": "1",
-      "id": 22
-    },
-    {
-      "message": "Hi",
-      "userId": "1",
-      "id": 23
-    },
-    {
-      "message": "Hey",
-      "userId": "3",
-      "id": 24
-    },
-    {
-      "message": "a",
-      "userId": "1",
-      "id": 25
-    },
-    {
-      "message": "asadf",
-      "userId": "1",
-      "id": 26
-    },
-    {
-      "message": "actual speeak",
-      "userId": "1",
-      "id": 27
-    },
-    {
-      "message": "whats up ",
-      "userId": "1",
-      "id": 28
-    },
-    {
-      "message": "whats up ",
-      "userId": "1",
-      "id": 29
-    },
-    {
-      "message": "money",
-      "userId": "1",
-      "id": 30
-    },
-    {
-      "message": "money",
-      "userId": "3",
-      "id": 31
-    },
-    {
-      "message": " top",
-      "userId": "1",
-      "id": 32
-    },
-    {
-      "message": "aasdasd",
-      "userId": "1",
-      "id": 33
-    },
-    {
-      "message": "rack",
-      "userId": "1",
-      "id": 34
-    },
-    {
-      "message": "ask",
-      "userId": "1",
-      "id": 35
-    },
-    {
-      "message": "things",
-      "userId": "1",
-      "id": 36
-    },
-    {
-      "message": "stuff",
-      "userId": "1",
-      "id": 37
-    },
-    {
-      "message": "other things",
-      "userId": "1",
-      "id": 38
-    },
-    {
-      "message": "gimme you shhiiiiii",
-      "userId": "3",
-      "id": 39
-    },
-    {
-      "message": "hello",
-      "userId": "3",
-      "id": 40
-    },
-    {
-      "message": "yoyoyoyoyy",
-      "userId": "3",
-      "id": 41
-    },
-    {
-      "message": "applws",
-      "userId": "1",
-      "id": 42
+      "artName": "F'ing",
+      "artSynopsis": "dork",
+      "artURL": "tard",
+      "userId": "2",
+      "timestamp": 1551381531,
+      "id": 5
     }
   ],
   "friends": []
