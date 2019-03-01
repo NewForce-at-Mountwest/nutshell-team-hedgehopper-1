@@ -1,6 +1,6 @@
 // import chatAPI from "../chatFiles/chatAPI";
 // import chatDom from "../chatFiles/chatDom";
-// import chatClickEvents from "../chatFiles/chatClickEvents";
+import chatClickEvents from "./chatFiles/chatClickEvents";
 import loginPage from "./login-logout/login";
 
 
@@ -10,8 +10,8 @@ import loginPage from "./login-logout/login";
 // })
 
 // chatDom()
-// chatClickEvents.postNewComment()
-// chatClickEvents.editComment()
+chatClickEvents.postNewComment()
+chatClickEvents.editComment()
 
 loginPage();
 

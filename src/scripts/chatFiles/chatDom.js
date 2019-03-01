@@ -6,7 +6,7 @@ const chatDom = () => {
           <section id="chat-area"></section>
         </div>
         <input type="text" id="type-here" placeholder="New Message">
-        <button id="chat-save">Send</button>`
+        <button class="chatSave" id="chat-save">Send</button>`
 
 
 }

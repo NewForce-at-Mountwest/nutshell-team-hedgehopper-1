@@ -5,6 +5,7 @@ import chatDom from "../chatFiles/chatDom";
 import chatClickEvents from "../chatFiles/chatClickEvents";
 
 
+
 const clickEventLogin = {
 
     //login button should load the main home page if passwords match the db.json
@@ -35,8 +36,8 @@ const clickEventLogin = {
 
                         //************ Chat Functions *************/
                         chatDom();
-                        chatClickEvents.postNewComment();
-                        chatClickEvents.editComment();
+                        //  chatClickEvents.postNewComment()
+                        //  chatClickEvents.editComment()
 
 
                     }

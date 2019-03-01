@@ -2,19 +2,21 @@
 import chatAPI from "./chatAPI";
 import messageObjectBuilder from "./messageObjectBuilder";
 import editCommentForm from "./editCommentForm";
-import handleEdit from "./handleEdit";
 import scrollToBottom from "./scrollToBottom";
+import editObjectBuilder from "./editObjectBuilder";
+
 
 const chatClickEvents = {
   postNewComment: () => {
-    document.querySelector("#chat-save").addEventListener("click", () => {
+    document.querySelector("#chatContainer").addEventListener("click", () => {
+      if(event.target.classList.contains("chatSave"))
       chatAPI
         .postComment(messageObjectBuilder())
         .then(chatAPI.getComment)
         .then(comments => {
           document.querySelector("#chat-area").innerHTML = "";
           comments.forEach(comment => {
-            document.querySelector("#chat-area").innerHTML += `<p id="edit-${
+            document.querySelector("#chat-area").innerHTML += `<p class="${comment.id}" id="edit-${
               comment.id
             }" class="edit">${comment.user.name}:  ${comment.message}</p>`;
             scrollToBottom();
@@ -23,15 +25,16 @@ const chatClickEvents = {
         });
     });
   },
-  editComment: () => {
-    handleEdit();
-        let isOpen = false
-    document.querySelector("#chat-area").addEventListener("dblclick", () => {
+        isOpen: false,
+
+  editComment: function(){
+    this.handleEdit();
+    document.querySelector("#chatContainer").addEventListener("dblclick", () => {
       const editId = event.target.id.split("-")[1];
 
-      if (event.target.classList.contains("edit") && isOpen === false) {
+      if (event.target.classList.contains("edit") && this.isOpen === false && event.target.classList.contains(sessionStorage.getItem("userId"))) {
         console.log("you clicked me");
-        isOpen = true
+        this.isOpen = true
         chatAPI.getSingleComment(editId).then(singleCommentData => {
           document.querySelector(`#edit-${editId}`).innerHTML = editCommentForm(singleCommentData);
           console.log(singleCommentData);
@@ -40,7 +43,34 @@ const chatClickEvents = {
 
 
     });
-  }
+  },
+  handleEdit: function() {
+
+    document.querySelector("#chatContainer").addEventListener("click", () => {
+        if(event.target.classList.contains("save-edit-btn")){
+            const comment = event.target.id.split("-")[2]
+            chatAPI.editComment(editObjectBuilder(comment))
+            .then(chatAPI.getComment)
+            .then((comments) => {
+                document.querySelector("#chat-area").innerHTML = ""
+                comments.forEach(comment => {
+
+
+
+
+                    document.querySelector("#chat-area").innerHTML += `<p id="edit-${comment.id}" class="edit">${comment.user.name}:  ${comment.message}</p>`
+                    scrollToBottom()
+                    this.isOpen = false
+                })
+
+
+            })
+
+
+        }
+    })
+}
+
 };
 
 export default chatClickEvents;
