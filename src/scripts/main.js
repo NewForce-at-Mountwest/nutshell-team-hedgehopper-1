@@ -1,11 +1,12 @@
 
-import afterLoad from "./tasks/loadTasksContent"
 
-afterLoad();
+
+
 
 
 // import chatAPI from "../chatFiles/chatAPI";
 // import chatDom from "../chatFiles/chatDom";
+import afterLoad from "./tasks/loadTasksContent"
 import chatClickEvents from "./chatFiles/chatClickEvents";
 import loginPage from "./login-logout/login";
 import newsClickEvents from "./News/newsClickEvents.js"
@@ -33,3 +34,6 @@ newsClickEvents.addNewsArticle()
 newsClickEvents.deleteNewsArticle()
 newsClickEvents.editNewsArticle()
 newsClickEvents.saveEditedNewsArticle()
+
+//tasks
+afterLoad();
