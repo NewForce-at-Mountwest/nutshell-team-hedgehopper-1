@@ -1,20 +1,58 @@
 {
   "users": [
     {
-      "name": "User1",
-      "password": "1",
-      "email": "User1@user1.com",
+      "name": "a",
+      "password": "a",
+      "email": "a",
       "id": 1
     },
     {
-      "name": "User2",
-      "password": "2",
-      "email": "User2@user2.com",
+      "name": "s",
+      "password": "s",
+      "email": "s",
       "id": 2
+    },
+    {
+      "name": "rob",
+      "password": "1",
+      "email": ";alskjdf;lakdfja;lksjf",
+      "id": 3
     }
   ],
   "events": [],
   "tasks": [],
+  "messages": [
+    {
+      "message": "asf",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "message": "things are done",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "please work now ",
+      "userId": "3",
+      "id": 4
+    },
+    {
+      "message": "hello yes",
+      "userId": "3",
+      "id": 5
+    },
+    {
+      "message": "playa",
+      "userId": "3",
+      "id": 6
+    },
+    {
+      "message": "Yeahhhhh do the thing",
+      "userId": "1",
+      "id": 7
+    }
+  ],
   "newsArticles": [
     {
       "artName": "This",
@@ -41,6 +79,5 @@
       "id": 5
     }
   ],
-  "messages": [],
   "friends": []
 }

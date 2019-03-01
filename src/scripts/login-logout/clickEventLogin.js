@@ -1,6 +1,9 @@
 import loginApiManager from "./loginApiManager"
 import buildLogin from "./buildLoginDOM"
 import loginPage from "./login"
+import chatDom from "../chatFiles/chatDom";
+import chatClickEvents from "../chatFiles/chatClickEvents";
+
 // news functions import below
 import addNewsItem from "../News/NewsBuilder.js"
 import newsAPIMethods from "../News/newsAPImethods.js"
@@ -34,9 +37,17 @@ const clickEventLogin = {
                         // news clickevents below
                         addNewsItem()
                         newsAPIMethods.printAllUserArticles()
+                        //************ Chat Functions *************/
+                        chatDom();
+                        //  chatClickEvents.postNewComment()
+                        //  chatClickEvents.editComment()
 
                         buildLogin.logout();
                         clickEventLogin.handleLogout();
+
+
+
+
                     }
                     else {
                         alert("USERNAME/PASSWORD DOES NOT EXIST!")
@@ -103,6 +114,7 @@ const clickEventLogin = {
             console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
+            document.querySelector("#chatContainer"). innerHTML = ""
             document.querySelector("#newsContainer").innerHTML = ""
             loginPage();
 
