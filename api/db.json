@@ -32,23 +32,8 @@
       "location": "",
       "userId": "4",
       "id": 1
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
-      "id": 2
-    },
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
-      "id": 3
     }
   ],
-
   "tasks": [
     {
       "userId": null,
@@ -141,6 +126,11 @@
       "message": "who the fook made this site?!?! i want my money back",
       "userId": "4",
       "id": 11
+    },
+    {
+      "message": "liyg",
+      "userId": "4",
+      "id": 12
     }
   ],
   "newsArticles": [
@@ -159,6 +149,5 @@
       "id": 3
     }
   ],
-
   "friends": []
 }
