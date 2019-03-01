@@ -1,7 +1,7 @@
 import loginApiManager from "./loginApiManager"
 import buildLogin from "./buildLoginDOM"
 import loginPage from "./login"
-import events from "./events/events.js"
+import events from "../events/events.js"
 
 
 
@@ -102,6 +102,7 @@ const clickEventLogin = {
             console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
+            document.querySelector("#events").innerHTML=""
             loginPage();
 
         })

@@ -2,10 +2,60 @@
   "users": [
     {
       "name": "russ",
+      "password": "russ",
       "id": 3
+    },
+    {
+      "name": "r",
+      "password": "r",
+      "email": "r",
+      "id": 4
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "zsdf",
+      "date": "2019-02-05",
+      "location": "afsdf",
+      "userId": "3",
+      "id": 1
+    },
+    {
+      "name": "zsdf",
+      "date": "2019-02-03",
+      "location": "afsdf",
+      "userId": "3",
+      "id": 3
+    },
+    {
+      "name": "warety",
+      "date": "2019-02-05",
+      "location": "asdfasdf",
+      "userId": "4",
+      "id": 4
+    },
+    {
+      "name": "warety",
+      "date": "2019-02-05",
+      "location": "asdfasdf",
+      "userId": "4",
+      "id": 5
+    },
+    {
+      "name": "warety",
+      "date": "2019-02-05",
+      "location": "asdfasdf",
+      "userId": "4",
+      "id": 6
+    },
+    {
+      "name": "russ",
+      "date": "2018-11-02",
+      "location": "my place",
+      "userId": "4",
+      "id": 7
+    }
+  ],
   "tasks": [],
   "articles": [],
   "messages": [],

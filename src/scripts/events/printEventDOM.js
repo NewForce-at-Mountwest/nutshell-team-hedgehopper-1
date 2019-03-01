@@ -19,7 +19,7 @@ function printEventDOM(){
 
 
         document.querySelector("#eventDOMarea").innerHTML += `<fieldset id="singleEvent-${event.id}">
-    <legend>UserId #${event.userId}</legend>
+    <legend></legend>
         <div id="name-${event.id}">Name: ${event.name}</div>
         <div id="date-${event.id}">Date: ${event.date}</div>
         <div id="location-${event.id}">Location: ${event.location}</div>
