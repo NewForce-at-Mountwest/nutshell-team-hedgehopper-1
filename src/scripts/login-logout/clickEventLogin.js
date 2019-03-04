@@ -1,6 +1,7 @@
 import loginApiManager from "./loginApiManager"
 import buildLogin from "./buildLoginDOM"
 import loginPage from "./login"
+import events from "../events/events.js"
 import chatDom from "../chatFiles/chatDom";
 import chatClickEvents from "../chatFiles/chatClickEvents";
 import afterLoad from "../tasks/loadTasksContent"
@@ -15,9 +16,11 @@ const clickEventLogin = {
 
     //login button should load the main home page if passwords match the db.json
     handleLogin: () => {
-        document.querySelector("#login").addEventListener("click", () => {
-            const userNameVal = document.querySelector("#userName").value
-            const userPasswordVal = document.querySelector("#password").value
+        document.querySelector("#loginContainer").addEventListener("click", () => {
+            if(event.target.id==="login"){
+                const userNameVal = document.querySelector("#userName").value
+                const userPasswordVal = document.querySelector("#password").value
+                console.log(userNameVal)
 
 
 
@@ -35,6 +38,9 @@ const clickEventLogin = {
                         sessionStorage.setItem("userId", taco[0].id)
                         document.querySelector("#loginContainer").innerHTML = ""
                         //************  All main page stuff(click events) needs to flow to here  ***********
+
+
+
                         // news clickevents below
                         addNewsItem()
                         newsAPIMethods.printAllUserArticles()
@@ -45,7 +51,11 @@ const clickEventLogin = {
                         afterLoad();
 
                         buildLogin.logout();
-                        clickEventLogin.handleLogout();
+                        // clickEventLogin.handleLogout();
+                        //************  All main page stuff(click events) needs to flow to here  ***********
+                       //events
+                        events.event()
+                        // clickEventLogin.handleLogout();
 
 
 
@@ -56,16 +66,18 @@ const clickEventLogin = {
                     }
 
                 })
+            }
+
         })
     },
 
     //this is the button on the registration form that posts the new user to the db.json
     handleRegistration: () => {
-        document.querySelector("#completeRegistration").addEventListener("click", () => {
-
-            const newUserName = document.querySelector("#createUserName").value
-            const newUserPass = document.querySelector("#createPassword").value
-            const newUserEmail = document.querySelector("#email").value
+        document.querySelector("#loginContainer").addEventListener("click", () => {
+            if(event.target.id==="completeRegistration"){
+                const newUserName = document.querySelector("#createUserName").value
+                const newUserPass = document.querySelector("#createPassword").value
+                const newUserEmail = document.querySelector("#email").value
 
             const newUser = {
                 name: newUserName,
@@ -96,32 +108,44 @@ const clickEventLogin = {
                     }
 
                 })
+            }
+
+
 
         })
     },
     //this brings up a registration form to make a new account
     handleCreateAccount: () => {
-        document.querySelector("#registerButton").addEventListener("click", () => {
+
+        document.querySelector("#loginContainer").addEventListener("click", () => {
+            if(event.target.id==="registerButton"){
             document.querySelector("#loginContainer").innerHTML = ""
             buildLogin.registerForm();
             buildLogin.completeRegistrationButton();
-            clickEventLogin.handleRegistration();
+            // clickEventLogin.handleRegistration();
+            }
+
 
         })
     },
 
 
     handleLogout: () => {
-        document.querySelector("#logout").addEventListener("click", () => {
-            console.log("you clicked logout")
+        document.querySelector("#loginContainer").addEventListener("click", () => {
+            if(event.target.id==="logout"){
+                console.log("you clicked logout")
             sessionStorage.clear()
             document.querySelector("#loginContainer").innerHTML = ""
+            document.querySelector("#eventFormArea").innerHTML=""
+            document.querySelector("#eventDOMarea").innerHTML=""
             document.querySelector("#chatContainer"). innerHTML = ""
             document.querySelector("#newsContainer").innerHTML = ""
             document.querySelector("#taskFormContainer").innerHTML = ""
             document.querySelector("#taskDomContainer").innerHTML = ""
             document.querySelector("#taskEditContainer").innerHTML = ""
             loginPage();
+            }
+
 
         })
     }

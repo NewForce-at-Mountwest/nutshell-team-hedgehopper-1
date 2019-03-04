@@ -1,3 +1,54 @@
-#taskContainer {
-    border: solid black 1px
+#homePage {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 60vw;
+
+
 }
+
+
+
+
+#taskContainer {
+    border: solid black 1px;
+    background-color: 	#dfe3ee;
+    text-align: center;
+}
+
+#type-here {
+    margin-top: auto;
+    background-color: 	#dfe3ee;
+    text-align: center;
+  }
+
+  #chat-area {
+    border: 1px solid black;
+    width: 60vw;
+    padding: auto;
+    height: 25vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: 	#dfe3ee;
+
+  }
+
+  #eventDOMarea{
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+
+#eventDOMarea fieldset:nth-last-child(1){
+    background-color: #3b5998	;
+    color: 	#f7f7f7;
+    font-size: 1.5em;
+    font-style: bold;
+
+
+
+}
+
+

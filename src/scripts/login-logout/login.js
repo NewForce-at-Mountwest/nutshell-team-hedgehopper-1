@@ -11,8 +11,8 @@ const loginPage = ()=>{
     buildLogin.loginForm();
     buildLogin.loginButton();
     buildLogin.registerButton();
-    clickEventLogin.handleCreateAccount();
-    clickEventLogin.handleLogin();
+    // clickEventLogin.handleCreateAccount();
+    // clickEventLogin.handleLogin();
 
 }
 
