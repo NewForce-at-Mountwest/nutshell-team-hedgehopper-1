@@ -8,7 +8,7 @@ const buildEditForm = (parsedArticle) => {
                 <label>Article Synopsis</label>
                 <input type="text" id="editedArtSynopsis" value="${parsedArticle.artSynopsis}"</input><br>
                 <lable>Article URL</label>
-                <input type="text" id="editedArtURL" value="${parsedArticle.artURL}"</input><br>
+                <input type="url" id="editedArtURL" value="${parsedArticle.artURL}"</input><br>
                 <br>
                 <button id="saveBtn-${parsedArticle.id}" class="saveBtn">Save Edited Article</button>
                 </article>
