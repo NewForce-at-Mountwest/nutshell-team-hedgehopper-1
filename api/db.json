@@ -1,185 +1,23 @@
 {
   "users": [
     {
-      "name": "a",
-      "password": "a",
-      "email": "a",
-      "id": 1
-    },
-    {
-      "name": "s",
-      "password": "s",
-      "email": "s",
-      "id": 2
-    },
-    {
-      "name": "rob",
-      "password": "1",
-      "email": ";alskjdf;lakdfja;lksjf",
-      "id": 3
-    },
-    {
-      "name": "r",
-      "password": "r",
-      "email": "r",
-      "id": 4
-    }
-  ],
-  "events": [
-    {
-      "name": "",
-      "date": "",
-      "location": "",
-      "userId": "4",
+      "name": "Charles",
+      "password": "Roo",
+      "email": "BelcherCharles@yahoo.com",
       "id": 1
     }
   ],
-  "tasks": [
-    {
-      "userId": null,
-      "task": "",
-      "description": "",
-      "dueDate": "",
-      "complete": false,
-      "id": 1
-    },
-    {
-      "userId": "1",
-      "task": "task",
-      "description": "task",
-      "dueDate": "",
-      "complete": false,
-      "id": 4
-    },
-    {
-      "userId": "1",
-      "task": "task",
-      "description": "task",
-      "dueDate": "",
-      "complete": false,
-      "id": 5
-    },
-    {
-      "userId": "1",
-      "task": "newtask",
-      "description": "task",
-      "dueDate": "2019-12-31",
-      "complete": false,
-      "id": 6
-    },
-    {
-      "userId": "1",
-      "task": "task",
-      "description": "taskNEWedit",
-      "dueDate": "2019-12-31",
-      "complete": false,
-      "id": 7
-    }
-  ],
-  "messages": [
-    {
-      "message": "asf",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "message": "things are done",
-      "userId": "1",
-      "id": 3
-    },
-    {
-      "message": "please work now ",
-      "userId": "3",
-      "id": 4
-    },
-    {
-      "message": "hello yes",
-      "userId": "3",
-      "id": 5
-    },
-    {
-      "message": "playa",
-      "userId": "3",
-      "id": 6
-    },
-    {
-      "message": "Yeahhhhh do the thing",
-      "userId": "1",
-      "id": 7
-    },
-    {
-      "message": "asdf",
-      "userId": "4",
-      "id": 8
-    },
-    {
-      "message": "russ",
-      "userId": "4",
-      "id": 9
-    },
-    {
-      "message": "nutshell drives me nuts",
-      "userId": "4",
-      "id": 10
-    },
-    {
-      "message": "who the fook made this site?!?! i want my money back",
-      "userId": "4",
-      "id": 11
-    },
-    {
-      "message": "liyg",
-      "userId": "4",
-      "id": 12
-    }
-  ],
+  "events": [],
+  "tasks": [],
+  "messages": [],
   "newsArticles": [
     {
-      "name": "zsdf",
-      "date": "2019-02-05",
-      "location": "afsdf",
-      "userId": "3",
+      "artName": "Here's A New Article",
+      "artSynopsis": "Just Some Interesting Stuff",
+      "artURL": "www.somewebsite.com",
+      "userId": "1",
+      "timestamp": 1551708853,
       "id": 1
-    },
-    {
-<<<<<<< HEAD
-      "artName": "this",
-      "artSynopsis": "blows",
-      "artURL": "goats",
-      "userId": "2",
-      "timestamp": 1551381523,
-      "id": 4
-    },
-    {
-      "artName": "F'ing",
-      "artSynopsis": "dork",
-      "artURL": "tard",
-      "userId": "2",
-      "timestamp": 1551381531,
-      "id": 5
-    },
-    {
-      "artName": "",
-      "artSynopsis": "",
-      "artURL": "www.dothething.com",
-      "userId": "1",
-      "timestamp": 1551458278,
-      "id": 6
-    },
-    {
-      "artName": "Is",
-      "artSynopsis": "This",
-      "artURL": "http://www.google.com",
-      "userId": "1",
-      "timestamp": 1551458586,
-      "id": 7
-=======
-      "name": "zsdf",
-      "date": "2019-02-03",
-      "location": "afsdf",
-      "userId": "3",
-      "id": 3
->>>>>>> master
     }
   ],
   "friends": []
