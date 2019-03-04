@@ -10,7 +10,7 @@ const loginFormHTML = `<fieldset id="loginForm">
   <label>Username: </label> <input type="text" id="userName" >
 </div>
 <div>
-  <label>Password:</label> <input type="text" id="password">
+  <label>Password:</label> <input type="password" id="password">
 </div>
 </fieldset>`
 
